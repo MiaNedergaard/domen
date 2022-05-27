@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--SEO-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Domen er et af Aarhus’ bylivshuse. Det er et mødested for alle; 
+    borgere, virksomheder og foreninger. Vi arbejder aktivt med medborgerskab, fællesskab og bæredygtighed 
+    og værner disse værdier højt, hvorfor alle vores events også aktivt arbejder mod at fremme disse tre.">
+    <meta name="keywords" content="Aarhus, Domen, Bylivshus, Kulturhus, Havnen">
+    <meta name="author" content="Laura Rosendahl, Mia Nedergaard og Line Heesch Jessen">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/0bdbe266da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fbc3fxm.css">
+    <!--MAPBOX-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
+    <title>Domen</title>
+</head>
+
+
+<body>
+<section id="baggrund-top">
+
+<!-- logo mobil -->
+<div id="nav-mobil">
+    <div><a href="index.html"><img id="logo-top" src="images/logo.png" alt="Domen logo"></a></div>
+    <div><a href="burgermenu.html"><h2 id="burgermenu">☰</h2></a></div>
+</div>
+
+<!--NAVBAR-->
+<nav>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Domen Logo"></a>
+        </div>
+    <div class="container">
+        <div class="content">
+            <div class="responsive-nav" id="responsive-nav">
+                <div class="nav-links">
+                    <a class="nav-link" href="naturen.html">Naturen</a>
+                    <a class="nav-link" href="cafe.html">Caféen</a>
+                    <a class="nav-link" href="events.html">Events</a>
+                    <a class="nav-link" href="omdomen.html">Om Domen</a>
+                </div>
+
+                <div class="nav-socials">
+                    <a class="nav-icon social-link" href="https://www.instagram.com/domeniaarhus/" target="_blank"><i id="insta" class="fa fa-instagram"></i></a>
+                    <a class="nav-icon social-link" href="https://www.facebook.com/domenaarhus" target="_blank"><i class="fa fa-facebook"></i></a>
+                </div>
+                            
+                <!--  Søgefelt  -->
+                <div class="box">
+                    <form name="search">
+                        <input id="myInput" type="text" class="input" name="txt" onmouseout="document.search.txt.value = ''">
+                    </form>
+                    <i id="soeg" class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+
+<!-- Side navigation --> 
+<div id="sidenavigation">
+    <div id="d1">
+        <div class="flex">
+            <a class="sidenavigation-position" href="#landingpage" id="op1"></a>
+            <p class="description">Forside</p>
+          </div>
+          <div class="flex">
+            <a class="sidenavigation-position" href="#bylivshus" id="op2"></a>
+            <p class="description">Bylivshus</p>
+          </div>
+          <div class="flex">
+            <a class="sidenavigation-position" href="#video-scroll" id="op3"></a>
+            <p class="description">Video</p>
+          </div>
+          <div class="flex">
+            <a class="sidenavigation-position" href="#slider" id="op4"></a>
+            <p class="description">Stedet</p>
+          </div>
+          <div class="flex">
+            <a class="sidenavigation-position" href="#frivillige" id="op5"></a>
+            <p class="description">Frivillige</p>
+          </div>
+        </div>
+    </div>
+
+<!-- section 1 - landingpage -->
+<div class="wrap">
+<div id="landingpage">
+    <img data-aos="zoom-in-up" data-aos-duration="3000" id="plantetop" src="images/plante3.png" alt="bregne">
+    <img id="plantetop-mobil" src="images/plante3.png" alt="bregne">
+    <img id="dome" src="images/dome.png" alt="domen set udefra">
+    <!-- Domen titel-->
+    <div class="titel">
+        <img data-aos="fade-down" data-aos-duration="1800" id="d" src="images/d.png" alt="D">
+        <img data-aos="fade-up" data-aos-duration="1800" class="bogstaver" id="o" src="images/o.png" alt="O">
+        <img data-aos="fade-down" data-aos-duration="1800" id="m" src="images/m.png" alt="M">
+        <img data-aos="fade-up" data-aos-duration="1800" class="bogstaver" id="e" src="images/e.png" alt="E">
+        <img data-aos="fade-down" data-aos-duration="1800" class="bogstaver" id="n" src="images/n.png" alt="N">
+    </div>
+    <!-- Pil der bouncer -->
+    <div id="pil" class="arrow bounce">
+        <a href="#bylivshus"><img id="pilbillede" src="images/pil.png" alt="pil"></a>
+    </div>
+</div>
+
+
+ <!-- section 2 - bylivshus -->
+<section id="bylivshus">
+    <div id="venstre-billede">
+        <div id="bylivs-billede"></div>
+        <img data-aos="fade" data-aos-delay="300" data-aos-duration="500" class="trekantbyliv bylivsvb" src="images/bylivshus1.png" alt="trekantsbillede af bylivshuset">
+        <img data-aos="fade" data-aos-delay="500" data-aos-duration="500" class="trekantbyliv bylivsvt" src="images/bylivshus2.png" alt="trekantsbillede af bylivshuset">
+        <img data-aos="fade" data-aos-delay="700" data-aos-duration="500" class="trekantbyliv bylivst" src="images/bylivshus3.png" alt="trekantsbillede af bylivshuset">
+        <img data-aos="fade" data-aos-delay="900" data-aos-duration="500" class="trekantbyliv bylivsvvb" src="images/bylivshus4.png" alt="trekantsbillede af bylivshuset">
+        <img data-aos="fade" data-aos-delay="700" data-aos-duration="500" class="trekantbyliv bylivshb" src="images/bylivshus5.png" alt="trekantsbillede af bylivshuset">
+        <img data-aos="fade" data-aos-delay="900" data-aos-duration="500" class="trekantbyliv bylivshhb" src="images/bylivshus6.png" alt="trekantsbillede af bylivshuset">
+    </div>
+    <div id="hojre-tekst">
+        <h2 data-aos="fade-left" data-aos-delay="300" id="overskrift1">ET UNIKT BYLIVSHUS</h2>
+        <p data-aos="fade-left" data-aos-delay="600">Domen er et bylivshus for hele Aarhus. Med sin placering på pier 2 er Domen en oase placeret midt i byen. Her kan du møde nye mennesker, studere, spille musik, deltage i eller afholde offentlige arrangementer eller blot nyde en økologisk kop kaffe i vores hyggelige café. Arrangementerne byder blandt andet på salsadans, loppemarkeder og yoga. Alle events er skabt med tanke på at stærke fællesskabet, medborgskabet eller at fremme den grønne udvikling. </p>
+        <button id="knap1" class="button">
+            <span class="button-content">Læs mere</span>
+        </button>
+    </div>
+</section>
+</div>
+
+<div class="bylivshusmobil">
+    <img src="images/bylivshus.png" alt="trekantsbillede bylivshus">
+</div>
+
+ <!-- sidenavigation scroll til video -->
+<div id="video-scroll"></div>
+</section>
+
+ <!-- section 3 - video -->
+ <div id="video">
+    <video id="video1" autoplay muted loop>
+        <source src="images/domen4k.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+ <!-- section 4 - slider web -->
+      <div class="sticky-container">
+        <main>
+            <!-- slider 1 -->
+          <section id="cafe">
+            <div class="v-overskrift">
+                <img data-aos="fade-right" id="cafe-overskrift" src="images/cafeen-overskrift.png" alt="cafeen overskrift">
+            </div>
+
+            <div data-aos="fade-right" data-aos-delay="300" class="h-beskrivelse">
+                <h3 id="slider-prik">En iskaffe i tropevarmen</h3>
+                <p>I caféen kan du købe kolde og varme drikke samt små snacks til den lille sult. Alle produkter i caféen er økologiske, og kan nydes med god samvittighed og med tanke til bæredygtigheden. Vores café er drevet af henholdsvis vores ansatte og de frivillige, og kører desuden som et beskæftigelsestilbud.<br><br>Kom ned og nyd en kaffe, en øl eller et glas kold vin i de smukke omgivelser i Domen. </p>
+                <h4>Caféens åbningstider</h4>
+                <p>Man: Lukket</p>
+                <p>Tir-Tor: 10:00 - 18:00</p>
+                <p>Fre-Lør: 10:00 - 20:00</p>
+                <p class="slut">Søn: 10:00 - 18:00</p>
+                <button id="button2" class="button">
+                    <span class="button-content">Læs mere</span>
+                </button>
+            </div>
+
+            <div class="h-billede">
+                <div class="slider-billede"></div>
+                <div class="slidertrekant1">
+                    <img data-aos="fade" data-aos-delay="300" data-aos-duration="500" class="trekant-halv billedehb" src="images/cafeen1.png" alt="trekant-billede events">
+                    <img data-aos="fade" data-aos-delay="500" data-aos-duration="500" class="trekant billedeht" src="images/cafeen2.png" alt="trekant-billede events">
+                    <img data-aos="fade" data-aos-delay="700" data-aos-duration="500" class="trekant billedemt" src="images/cafeen3.png" alt="trekant-billede events">
+                    <img data-aos="fade" data-aos-delay="500" data-aos-duration="500" class="trekant billedemb" src="images/cafeen4.png" alt="trekant-billede events">
+                    <img data-aos="fade" data-aos-delay="700" data-aos-duration="500" class="trekant billedevb" src="images/cafeen5.png" alt="trekant-billede events">
+                </div>
+            </div>
+          </section>
+
+          <!-- slider 2 -->
+          <section id="omraadet">
+            <div class="v-overskrift">
+                <img id="omraade-overskrift" src="images/omraadet-overskrift.png" alt="cafeen overskrift">
+            </div>
+
+            <div class="h-beskrivelse">
+                <h3>Natur i centrum af Aarhus</h3>
+                <p>Domen er med sin centrale placering og specielle udformning en oase i midten af byen. Domen kan minde om et drivhus, og indeholder et utal af planter. Dette, kombineret med sin adresse på havnen, bidrager til den tropiske atmosfære, der er at finde i bygningen. Domen er en slags medborgerhus, som også fungerer som et konkret bud på, hvordan man kan udnytte byens mellemrum til fælles gavn.</p>
+                <h4>Hvad tilbyder Domen?</h4>
+                <p>● Café i tropiske omgivelser</p>
+                <p>● Havneudsigt med siddepladser</p>
+                <p>● Natur og planter både inde og ude</p>
+                <p class="slut">● Fælles køkkenhave med krydderurter</p>
+                <button id="button3" class="button">
+                    <span class="button-content">Læs mere</span>
+                </button>
+            </div>
+
+            <div class="h-billede">
+                <div class="slider-billede"></div>
+                <div class="h-billede">
+                    <div class="slider-billede"></div>
+                    <div class="slidertrekant2">
+                        <img class="trekant-halv billedehb" src="images/area1.png" alt="trekant-billede events">
+                        <img class="trekant billedeht" src="images/area2.png" alt="trekant-billede events">
+                        <img class="trekant billedemt" src="images/area3.png" alt="trekant-billede events">
+                        <img class="trekant billedemb" src="images/area4.png" alt="trekant-billede events">
+                        <img class="trekant billedevb" src="images/area5.png" alt="trekant-billede events">
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- slider 3 -->
+          <section id="events">
+            <div class="v-overskrift">
+                <img id="events-overskrift" src="images/events-overskrift.png" alt="cafeen overskrift">
+            </div>
+
+            <div class="h-beskrivelse">
+                <h3>Arrangementer for enhver</h3>
+                <p>I Domen afholdes der arrangementer flere gange om ugen. De kan bestå af alt fra kunstudstillinger, gin-smagning, koncerter til bogreceptioner. Det eneste krav er, at de har en vinkling, der fremmer enten medborgskabet, fællesskabet eller den grønne omstilling. Alle er velkomne, og vores arrangementer er som udgangspunkt altid gratis. Du kan finde alle vores events i vores eventkalender, eller se kommende events på vores Facebookside. </p>
+                <h4>Hvilke typer events kan du opleve?</h4>
+                <p>● Loppemarkeder</p>
+                <p>● Koncerter</p>
+                <p>● Yoga og meditation</p>
+                <p class="slut">● Og meget, meget mere</p>
+                <button id="button4" class="button">
+                    <span class="button-content">Læs mere</span>
+                </button>
+            </div>
+
+            <div class="h-billede">
+                <div class="slider-billede"></div>
+                    <div class="slidertrekant3">
+                        <img class="trekant-halv billedehb" src="images/events1.png" alt="trekant-billede events">
+                        <img class="trekant billedeht" src="images/events2.png" alt="trekant-billede events">
+                        <img class="trekant billedemt" src="images/events3.png" alt="trekant-billede events">
+                        <img class="trekant billedemb" src="images/events4.png" alt="trekant-billede events">
+                        <img class="trekant billedevb" src="images/events5.png" alt="trekant-billede events">
+                    </div>
+                </div>
+         </section>
+    </main>
+</div>
+
+<!-- Baggrund til sektion efter video -->
+<section id="baggrund-bund">
+
+<!-- frivillige overskrift mobil -->
+
+<h2 id="overskrift-mobil-frivillige">FRIVILLIGE ILDSJÆLE</h2>
+
+ <!-- section 5 - frivillige -->
+<section id="frivillige">
+    <div class="h-billede">
+        <img data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="300" id="plante-op" src="images/plante-op.png" alt="bregne bag billede">
+        <img id="frivillige-billede" src="images/frivillige.jpeg" alt="Frivillige i Domen">
+    </div>
+
+    <div data-aos="fade-left" data-aos-delay="600" class="frivillig-beskrivelse">
+        <h3 id="overskrift5">Drevet af aarhusianere</h3>
+        <p>Domen er drevet som et samarbejde mellem frivillige ildsjæle og kommunen. Domens værdier bygger på kommunens visioner, men al daglig vedligeholdelse, og dag-til-dag driften, opretholdes af de frivillige samt de ansatte. Vi stræber efter så lidt bureaukrati som muligt med minimal styring. Det kræver gode relationer og en stor bunke tillid. Domen er for alle, og alle er med til at gøre Domens eksistens mulig. </p>
+        <img id="kommuneikon" src="images/kommune.png" alt="Aarhus kommune logo">
+        <button id="button5" class="button">
+            <span class="button-content">Læs mere</span>
+        </button>
+    </div> 
+
+    <div data-aos="fade-left" data-aos-delay="300" class="v-overskrift">
+        <img id="frivillige-overskrift" src="images/frivillige-overskrift.png" alt="frivillige overskrift">
+    </div>
+</section>
+
+
+ <!-- section 6 - anmeldelser -->
+<section id="anmeldelser">
+    <h2 data-aos="fade-up" id="anmeldelser-scroll">Anmeldelser</h2>
+    <div class="flex-anmeldelser">
+    <div data-aos="fade-up">
+        <i class="fa fa-facebook fa-3x anmeldelser-ikon" aria-hidden="true"></i>
+        <div class="stjerner">
+            <span class="fa fa-star fa-2x checked1"></span>
+            <span class="fa fa-star fa-2x checked1"></span>
+            <span class="fa fa-star fa-2x checked1"></span>
+            <span class="fa fa-star fa-2x checked1"></span>
+            <span class="fa fa-star-half fa-2x checked1"></span>
+        </div>
+        <div class="anmeldelser-billeder">
+        <img class="anmeldelse-billede" src="images/facebook1.png" alt="facebook anmeldelse">
+        <img class="anmeldelse-billede" src="images/facebook2.png" alt="facebook anmeldelse">
+        <img class="anmeldelse-billede" src="images/facebook3.png" alt="facebook anmeldelse">
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="300">
+        <i class="fa fa-google fa-3x anmeldelser-ikon" aria-hidden="true"></i>
+        <div class="stjerner">
+            <span class="fa fa-star fa-2x checked2"></span>
+            <span class="fa fa-star fa-2x checked2"></span>
+            <span class="fa fa-star fa-2x checked2"></span>
+            <span class="fa fa-star fa-2x checked2"></span>
+            <span class="fa fa-star-half fa-2x checked2"></span>
+        </div>
+        <div class="anmeldelser-billeder">
+        <img class="anmeldelse-billede" src="images/google1.png" alt="google anmeldelse">
+        <img class="anmeldelse-billede" src="images/google2.png" alt="google anmeldelse">
+        <img class="anmeldelse-billede" src="images/google3.png" alt="google anmeldelse">
+    </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="600">
+        <i class="fab fa-tripadvisor fa-3x anmeldelser-ikon" aria-hidden="true"></i>
+        <div class="stjerner">
+            <span class="fa fa-star fa-2x checked3"></span>
+            <span class="fa fa-star fa-2x checked3"></span>
+            <span class="fa fa-star fa-2x checked3"></span>
+            <span class="fa fa-star fa-2x checked3"></span>
+            <span class="fa fa-star-half fa-2x checked3"></span>
+        </div>
+        <div class="anmeldelser-billeder">
+        <img class="anmeldelse-billede" src="images/trip1.png" alt="tripadvisor anmeldelse">
+        <img class="anmeldelse-billede" src="images/trip2.png" alt="tripadvisor anmeldelse">
+        <img id="anmeldelse-slut" class="anmeldelse-billede" src="images/trip3.png" alt="tripadvisor anmeldelse">
+        </div>
+    </div>
+    </div>
+</section>
+
+ <!-- footer -->
+ <footer data-aos="slide-up" data-aos-duration="800" class="footer">
+    <a href="index.html"><div id="footer-logo"><img src="images/logo-hvid.png" alt="Footer logo"></div></a>
+
+    <div class="foot">
+        <div id="foot1">
+            <h4>Kontakt</h4>
+                <p> <b>Tlf:</b> +45  41 87 46 95</p>
+                <p><b>Adresse:</b> Inge Lehmanns Gade 22, 8000 Aarhus</p>
+                <p><b>E-mail:</b> domen@aarhus.dk</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/domenaarhus/"><i class="fab fa-facebook-f"></i></a>
+                    <p>/domenaarhus</p>
+                    <a href="https://www.instagram.com/domeniaarhus/?hl=da"><i class="fab fa-instagram"></i></a>
+                    <p>@Domeniaarhus</p>
+                    <p>@Domensblomster</p>
+                </div> 
+        </div>
+        
+        <div id="foot2">
+            <h4>Åbningstider</h4>
+            <div id="åbningstider"></div>
+        </div>
+
+        <div id="foot3">
+            <h4>Find Domen</h4> 
+        </div>
+        <div id="map"></div>
+        
+    </div>
+
+    <video id="video-footer" autoplay muted loop>
+        <source src="images/footer.webm" type="video/webm">
+    </video>
+
+    <div class="detmedsmaat">
+        <div id="foot4">
+           <p>&copy; 2022 Domen</p>
+        </div>
+        
+        <div id="foot5">
+            <a href="error.html"><p>Privatlivspolitik</p></a>
+        </div>
+
+        <div id="foot6">
+            <a href="error.html"><p>Bylivshusene</p></a>
+        </div>
+
+        <div id="foot7">
+            <a href="error.html"><p>Aarhus Kommune</p></a>
+        </div>
+        
+    </div>
+</footer>
+
+<!-- Baggrund bund slut-->
+</section>
+    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/js.js"></script>
+
+</body>
+</html>

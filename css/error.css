@@ -1,0 +1,377 @@
+/* -------- reset css -------- */
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* --------     css start   -------- */
+/* -------- FONTE OG FARVER -------- */
+
+:root {
+  /* farver */
+  --varmhvid: #FFFDF8;
+  --orange: #ba6d3a;
+  --blaa: #9ab1cb;
+  --groen: #7e963c;
+  --gul: #e5b93f;
+  --sort: #333333;
+  --hvid: #ffffff;
+
+  /* fonte */
+  --font: 'source-sans-pro', sans-serif; /* font */
+  /* font-weight: 400; brødtekst */
+  /* font-weight: 600; overskrifter */
+  /* font-weight: 700; bold */
+}
+
+  /* tekst-indstillinger */
+  a {
+      text-decoration: none;
+      font-family: var(--font);
+      font-weight: 400;
+      color: var(--sort);
+      font-size: 2vw;
+  }
+
+  h1 {
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--sort);
+  }
+
+  h2 {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--sort);
+    font-size: 7.3vw;
+    line-height: 8vw;
+  }
+
+  h3 {
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--sort);
+    font-size: 2vw;
+    line-height: 4vw;
+  }
+
+  h4 {
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--sort);
+    font-size: 1.2vw;
+    line-height: 2vw;
+  }
+
+  p {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--sort);
+    font-size: 1.113vw;
+    line-height: 2.3vw;
+  }
+
+html {
+   scroll-behavior: smooth;
+   background-color: var(--varmhvid);
+}
+
+.wrap {
+    /*background-color: var(--blaa);*/
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+/* ---------------------------------------------- NAVIGATION ------------------------------------------------- */
+
+#nav-mobil {
+    display: none;
+  }
+
+/* ---- NAVIGATIONSBAR ---- */
+.navbar{
+    font-family: var(--brodtekst);
+    z-index: 99;
+    font-weight: normal;
+    height: 5.5vw;
+    background-color: var(--varmhvid);
+}
+
+.logo a:hover{
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.navbar a:hover{
+    opacity: 0.5;
+    transition: .2s;
+}
+
+/* So-me placering i navbar */
+.nav-socials {
+    padding-left: 8.4vw;
+}
+
+/* afstand mellem links */
+.nav-links a{
+    color: var(--sort);
+    font-size: 1.1vw;
+    padding-right: 7vw;
+}
+
+/* links placering i navbar */
+.nav-links {
+    list-style: none;
+    padding-left: 22vw;
+    padding-top: 0.5vw;
+}
+
+.is-selected {
+    padding: 0px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: var(--varmhvid);
+    transition: all 300ms ease-in-out;
+    z-index: 10000;
+}
+
+.navbar {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 2vh;
+    background-color: var(--varmhvid);
+    transition: all 300ms ease-in-out;
+}
+
+/* logos placering i navbar */
+.logo{
+    margin-right: auto;
+    margin-left: 1vw;
+}
+
+/* logo størrelse */
+.logo img{
+    height: 3vw;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--sort);
+    padding: 1.2vw;
+    transition: color 0.2s ease;
+}
+
+.nav-socials i {
+    font-size: 1.5vw;
+}
+
+.social-link{
+    text-decoration: none;
+    color: var(--sort);
+    width: 3vw;
+    padding-left: 2vw;
+    transition: color 0.2s ease;
+}
+
+.container{
+    width: 100%;
+}
+
+.responsive-nav{
+    display: flex;
+}
+
+/* ---- SCROLL EFFECT NAVBAR ---- */
+
+.scroll-down .navbar{
+    transform: translate3d(0, -100%, 0);
+    background-color: transparent;
+}
+
+.scroll-down nav{
+    background-color: transparent;
+}
+
+.scroll-up nav{
+    box-shadow: 0px 10px 35px 0px rgba(87, 87, 87, 0.4);
+    color: black;
+    background-color: var(--varmhvid);
+}
+
+ /* ---- Søgefelt ---- */
+
+ .box{
+    position: absolute;
+    top: 49%;
+    left: 97%;
+    transform: translate(-90%,-50%);
+}
+.input {
+    padding-left: 0.5vw;
+    width: 2vw;
+    height: 2vw;
+    background: none;
+    border: 0.17vw solid var(--sort);
+    border-radius: 2vw;
+    box-sizing: border-box;
+    font-family: var(--brodtekst);
+    font-size: 0.9vw;
+    color: var(--sort);
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 11vw;
+    background: var(--varmhvid);
+    border-radius: 0.7vw;
+}
+#soeg {
+    position: absolute;
+    top: 49%;
+    right: 0.15vw;
+    transform: translate(-50%,-50%);
+    font-size: 0.85vw;
+    color: var(--sort);
+    transition: .2s;
+}
+
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Sektion 1 - 404 page */
+
+#baggrund-top {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#ups {
+    text-align: center;
+    padding-top: 12%;
+    padding-right: 2%;
+}
+
+#ups a:hover {
+    color: #7e963c;
+}
+
+.plante-bund img{
+    position: absolute;
+    top: 17vw;
+    width: 90vw;
+    overflow: hidden;
+}
+
+
+#plante4 {
+    width: 90vw;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10vw;
+    margin-left: 0vw;
+}
+
+#plante5 {
+    width: 90vw;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10vw;
+    margin-left: -13vw;
+}
+
+
+.titel {
+    position: absolute;
+    top: 18vw;
+    width: 55%;
+    margin-left: 12%;
+}
+
+#error1 {
+    width: 12vw;
+}
+
+#error2 {
+    position: absolute;
+    z-index: 2;
+    top: 0.2vw;
+    width: 18vw;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#error3 {
+    position: absolute;
+    top: 0.2vw;
+    width: 12vw;
+    right: 0;
+}
+
+/* ------------------------------- mobil-version ---------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        display: none;
+      }
+     
+     #logo-top {
+       display: block;
+       width: 10vw;
+       margin-left: 3vw;
+     }
+     
+     #burgermenu {
+       display: inline;
+       margin-left: 75vw;
+     }
+     
+     #nav-mobil {
+       display: flex;
+       margin-top: 4vw;
+     }
+
+
+     .ups-overskrift h3{
+         position: absolute;
+         top: 55vw;
+         font-size: 8vw;
+         line-height: 10vw;
+         font-weight: 400;
+         margin-right: 5vw;
+     }
+
+     .ups-overskrift a {
+        font-size: 8vw;
+        line-height: 10vw;
+        text-decoration: underline;
+        font-weight: 600;
+     }
+
+     .plante-bund {
+         position: absolute;
+         top: 160vw;
+     }
+
+     .titel {
+         position: absolute;
+         top: 175vw;
+     }
+}

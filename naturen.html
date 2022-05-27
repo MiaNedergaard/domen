@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="Domen er et frirum, hvor du kan få et afbræk fra byens biler og larm. Her kan du 
+    nyde naturen og den friske havneatmosfære. Kom ned og oplev den helt særlige stemning, der ikke er at finde andre 
+    steder i Aarhus.">
+    <meta name="keywords" content="natur, Pier 2, havudsigt, frirum, aarhus, havneatmosfære, planter, væksthus, tropisk, 
+    planteteam, frivillige, plantedage, natur i centrum">
+    <meta name="author" content="Laura Rosendahl, Mia Nedergaard og Line Heesch Jessen">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/0bdbe266da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/naturen.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fbc3fxm.css">
+    <!--MAPBOX-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
+    <title>Området</title>
+</head>
+
+<body>
+<section id="baggrund-top">
+<!--NAVBAR-->
+<div id="nav-mobil">
+    <div><a href="index.html"><img id="logo-top" src="images/logo.png" alt="Domen logo"></a></div>
+    <div><a href="burgermenu.html"><h2 id="burgermenu">☰</h2></a></div>
+</div>
+
+<nav>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="Domen Logo"></a>
+        </div>
+    <div class="container">
+        <div class="content">
+            <div class="responsive-nav" id="responsive-nav">
+                <div class="nav-links">
+                    <a class="nav-link" href="naturen.html">Naturen</a>
+                    <a class="nav-link" href="cafe.html">Caféen</a>
+                    <a class="nav-link" href="events.html">Events</a>
+                    <a class="nav-link" href="omdomen.html">Om Domen</a>
+                </div>
+
+                <div class="nav-socials">
+                    <a class="nav-icon social-link" href="https://www.instagram.com/domeniaarhus/" target="_blank"><i id="insta" class="fa fa-instagram"></i></a>
+                    <a class="nav-icon social-link" href="https://www.facebook.com/domenaarhus" target="_blank"><i class="fa fa-facebook"></i></a>
+                </div>
+                            
+                <!--  Søgefelt  -->
+                <div class="box">
+                    <form name="search">
+                        <input type="text" class="input" name="txt" onmouseout="document.search.txt.value = ''">
+                    </form>
+                    <i id="soeg" class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</nav>
+
+
+<!-- section 1 området -->
+<section id="omraade">
+    <!-- logo mobil -->
+
+
+
+<!--  Splide js  -->
+<div id="splide" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="images/omraadeslider1.png" alt="billede i karussel af området"></li>
+        <li class="splide__slide"><img src="images/omraadeslider2.png" alt="billede i karussel af området"></li>
+        <li class="splide__slide"><img src="images/omraadeslider3.png" alt="billede i karussel af området"></li>
+        <li class="splide__slide"><img src="images/omraadeslider4.png" alt="billede i karussel af området"></li>
+        <li class="splide__slide"><img src="images/omraadeslider5.png" alt="billede i karussel af området"></li>
+        <li class="splide__slide"><img src="images/omraadeslider6.png" alt="billede i karussel af området"></li>
+        <li class="splide__slide"><img src="images/omraadeslider7.png" alt="billede i karussel af området"></li>
+      </ul>
+    </div>
+  </div>
+
+<div class="wrap">
+<h2 data-aos="fade-up" data-aos-delay="300" id="overskrift">NATUREN</h2>
+<!--karussel mobil-udgave -->
+<div class="slidecontainer">
+    <div class="slides">
+        <div class="slide">
+            <img src="images/omraadeslider1.png" alt="billede i karussel af området">
+        </div>
+        <div class="slide">
+            <img src="images/omraadeslider2.png" alt="billede i karussel af området">
+        </div>
+        <div class="slide">
+           <img src="images/omraadeslider3.png" alt="billede i karussel af området">
+        </div>
+            <img src="images/omraadeslider4.png" alt="billede i karussel af området">
+        </div>
+        <div class="slide">
+            <img src="images/omraadeslider5.png" alt="billede i karussel af området">
+        </div>
+        <div class="slide">
+            <img src="images/omraadeslider6.png" alt="billede i karussel af området">
+        </div>
+        <div class="slide">
+            <img src="images/omraadeslider7.png" alt="billede i karussel af området">
+        </div>
+    </div>
+    <div class="slide-controls">
+        <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+<p data-aos="fade-up" id="metatekst">Domen er placeret på Pier 2 og har derfor en helt unik beliggenhed med havudsigt til alle sider. Vi stræber efter, at Domen skal være et frirum i byen, hvor du som besøgende kan få et afbræk fra biler og larm, og i stedet kan komme ud og nyde naturen og den friske havneatmosfære. Rundt om Domen er der plantet træer, buske og blomster, anlagt en sø og rig mulighed for at plukke og passe friske krydderurter. Så kom ned og og oplev på egen hånd den helt særlige og rolige stemning, der ikke er til at finde andre steder i midtbyen af Aarhus. </p>
+
+</div>
+</section>
+
+
+
+<!-- sidenavigation scroll til video -->
+<div id="video-scroll"></div>
+
+</section>
+
+<!-- section 2 - video -->
+ <div id="video">
+    <video id="video1" autoplay muted loop>
+        <source src="images/omraade.mp4" type="video/mp4">
+      </video>
+    </div>
+
+<!-- Baggrund til sektion efter video -->
+<section id="baggrund-bund">
+
+<!-- section 3 - området -->
+
+<section id="planterne">
+    <div data-aos="fade-right" data-aos-delay="300" class="v-overskrift">
+        <img id="plante1-overskrift" src="images/planterne.png" alt="Planterne overskrift">
+    </div>
+
+    <div data-aos="fade-right" data-aos-delay="600" class="plante-beskrivelse">
+        <h2 id="overskrift-mobil-planter">PLANTERNE</h2>
+        <p>Domen er ikke kun en café og et kulturhus - det fungerer samtidig også som et tropisk væksthus. Domen indeholder et utal af planter af forskellige arter, både lokale og tropiske planter. Planterne er alle med til at skabe den fantastiske stemning, du kun kan finde i Domen, og de kræver alle pasning og pleje. Derfor har vi et team af frivillige, der kommer og ser til planterne, vander dem og sørger for, at de står tip-top til når du kommer. Vi afholder af og til plantedage i Domen, hvor du har mulighed for at få en rundvisning blandt de grønne blade, deltage i små workshops, hvor du kan få tips og tricks til hvordan du holder dine stueplanter grønne året rundt, eller hvor du kan bytte stiklinger med andre planteinteresserede. Hvis du har en passion for at tegne, kan du udfolde dine evner, når der afholdes plantecroquis i Domen.
+            Alle arrangementerne er gratis, så kom ned og lær, hvordan du kan folde smarte spirepotter af dine gamle aviser eller få gode tips til, hvordan du holder dine krydderurter friske i potter hele året rundt. </p>
+    </div> 
+
+    <div class="h-billede">
+        <img id="plante1-billede" src="images/plante1.png" alt="Plante fra Domen">
+    </div>
+    
+</section>
+
+<!-- section 4 - trekant galleri -->
+
+<div class="scrollmenu">
+    <img class="galleri1" src="images/plantegalleri1.png" alt="plante i Domen">
+    <img class="galleri2" src="images/plantegalleri2.png" alt="plante i Domen">
+    <img class="galleri1" src="images/plantegalleri3.png" alt="plante i Domen">
+    <img class="galleri2" src="images/plantegalleri4.png" alt="plante i Domen">
+    <img class="galleri1" src="images/plantegalleri5.png" alt="plante i Domen">
+    <img class="galleri2" src="images/plantegalleri6.png" alt="plante i Domen">
+    <img class="galleri1" src="images/plantegalleri7.png" alt="plante i Domen">
+    <img class="galleri2" src="images/plantegalleri8.png" alt="plante i Domen">
+    <img class="galleri1" src="images/plantegalleri9.png" alt="plante i Domen">
+    <img class="galleri2" src="images/plantegalleri10.png" alt="plante i Domen">
+</div>
+
+<!-- section 5 - planteteamet -->
+<div class="wrap">
+<div id="planteteamet">
+
+    <!-- section 4 - medarbejdere -->
+<section id="medarbejdere-sektion">
+    <h2 data-aos="fade-up" id="medarbejder-overskrift">DE FRIVILLIGE</h2>
+    <div id="medarbejder-flex">
+        <div data-aos="fade-up" id="medarbejder1" class="medarbejder-billede">
+        <img data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="300" id="plantebag" src="images/plante-op.png" alt="bregne bag billede">
+        <img id="cecilie" class="medarbejder-billede" src="images/cecilie2.png" alt="Medarbejder i cafeen">
+        <h3>CECILIE</h3>
+        <h4>Frivillig plantepasser</h4>
+        <p>”Jeg hedder Cecilie, jeg er 24 år og jeg læser til gartner og er elev i Væksthusene i Botanisk have. Jeg bruger meget af min fritid nede i Domen, hvor jeg har passet planterne siden april 2019. Det er fedt at kunne være med til at skabe et dejligt byrum og samtidig få erfaring.” </p>  
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" id="medarbejder2" class="medarbejder-billede">
+        <img data-aos="zoom-in-up" data-aos-duration="3000" data-aos-delay="300" id="plantebag2" src="images/plante-op5.png" alt="bregne bag billede">
+        <img class="medarbejder-billede" src="images/cafe-kvinde2.png" alt="Medarbejder i cafeen">
+        <h3>EMMA</h3>
+        <h4>Frivillig plantepasser</h4>
+        <p>”Jeg hedder Emma, jeg er 22 år og jeg læser matematik på AU, men har en stor passion for planter. Jeg har 29 planter derhjemme, som hver dag får pleje og kærlighed. Det gør mig bare i godt humør at være blandt planterne, og så er fællesskabet dernede mega fedt ”</p>  
+        </div>
+        <div data-aos="fade-up" data-aos-delay="600" id="medarbejder3" class="medarbejder-billede">
+        <img class="medarbejder-billede" src="images/cafe-mand.png" alt="Medarbejder i cafeen">
+        <h3>SIMON</h3>
+        <h4>Frivillig plantepasser</h4>
+        <p>”Jeg hedder Simon, jeg er 26 år og læser til anlægsgartner. Jeg var en tur i Domen, hvor jeg så Emma og Cecilie gå og pusle om planterne. Vi faldt i snak, og kom hurtigt ind på vores fælles passion for det grønne. Efter det, blev jeg en fast del af planteteamet i Domen.”</p>  
+    </div>
+    </div>
+</section>
+
+<section id="medarbejdere-mobil">
+    <h2 id="overskrift-mobil">DE FRIVILLIGE</h2> 
+
+<div class="container1">
+<div class="image">
+    <img class="medarbejderbilledemobil" src="images/cecilie2.png" alt="Medabejderbillede Cecilie">
+</div>
+<div class="text">
+    <h4>CECILIE</h4>
+    <p>”Jeg hedder Cecilie, jeg er 24 år og jeg læser til gartner og er elev i Væksthusene i Botanisk have. Jeg bruger meget af min fritid nede i Domen, hvor jeg har passet planterne siden april 2019. Det er fedt at kunne være med til at skabe et dejligt byrum og samtidig få erfaring.” </p>  
+</div>
+</div>
+
+<div class="container1">
+    <div class="image">
+        <img class="medarbejderbilledemobil" src="images/cafe-kvinde2.png" alt="Medabejderbillede Emma">
+    </div>
+    <div class="text">
+        <h4>EMMA</h4>
+        <p>”Jeg hedder Emma, jeg er 22 år og jeg læser matematik på AU, men har en stor passion for planter. Jeg har 29 planter derhjemme, som hver dag får pleje og kærlighed. Det gør mig bare i godt humør at være blandt planterne, og så er fællesskabet dernede mega fedt.” </p>  
+    </div>
+    </div>
+
+    <div class="container1">
+        <div class="image">
+            <img class="medarbejderbilledemobil" src="images/cafe-mand.png" alt="Medabejderbillede Simon">
+        </div>
+        <div class="text">
+            <h4>SIMON</h4>
+            <p>”Jeg hedder Simon, jeg er 26 år og læser til anlægsgartner. Jeg var en tur i Domen, hvor jeg så Emma og Cecilie gå og pusle om planterne. Vi faldt i snak, og kom hurtigt ind på vores fælles passion for det grønne. Efter det, blev jeg en fast del af planteteamet i Domen.”</p>  
+        </div>
+        </div>
+
+</section>
+</div>
+
+<!-- section 6 - natur i centrum -->
+<section id="natur">
+    <div class="h-billede">
+        <img id="plante2-billede" src="images/plante2.png" alt="Natur ved Domen">
+    </div>
+
+    <div class="natur-beskrivelse">
+        <h2 data-aos="fade-left" data-aos-delay="300" id="natur-overskrift">NATUR I CENTRUM</h2>
+        <p data-aos="fade-left" data-aos-delay="600" >I Domen har vi naturen i centrum. Med et stort fokus på bæredygtighed, er naturen og planterne fundamentet for både området omkring og i Domen. Vores mål er at skabe levesteder for de hjemmehørende arter igennem landskabelig variation og en rig flora. Med bæredygtigheden for øje, er stort set alle materialer i Domen genanvendte, og det meste af interiøret består af træ. Alt dette bidrager til den unikke atmosfære og grønne oase, der kan opleves i Domen. Vi håber på, at kunne inspirere Aarhusianere til at tage hånd om den truede natur ved at skabe en unik grøn oase på Pier 2. Så kom ned i Domen og få fyldt væskebalancen op i smukke grønne omgivelser, væk fra byens biler og beton, lige i centrum af Aarhus. </p>
+    </div> 
+
+</section>
+
+
+<section id="naturmobil">
+    <div class="natur-beskrivelsemobil">
+        <h2 id="natur-overskriftmobil">NATUR I CENTRUM</h2>
+        <p id="naturtekstmobil">I Domen har vi naturen i centrum. Med et stort fokus på bæredygtighed, er naturen og planterne fundamentet for både området omkring og i Domen. Vores mål er at skabe levesteder for de hjemmehørende arter igennem landskabelig variation og en rig flora. Med bæredygtigheden for øje, er stort set alle materialer i Domen genanvendte, og det meste af interiøret består af træ. Alt dette bidrager til den unikke atmosfære og grønne oase, der kan opleves i Domen. Vi håber på, at kunne inspirere Aarhusianere til at tage hånd om den truede natur ved at skabe en unik grøn oase på Pier 2. Så kom ned i Domen og få fyldt væskebalancen op i smukke grønne omgivelser, væk fra byens biler og beton, lige i centrum af Aarhus. </p>
+    </div> 
+</section>
+
+</div>
+
+
+<!-- footer -->
+<footer data-aos="slide-up" data-aos-duration="800" class="footer">
+    <a href="index.html"><div id="footer-logo"><img src="images/logo-hvid.png" alt="footer-logo"></div></a>
+
+    <div class="foot">
+        <div id="foot1">
+            <h4>Kontakt</h4>
+                <p> <b>Tlf:</b> +45  41 87 46 95</p>
+                <p><b>Adresse:</b> Inge Lehmanns Gade 22, 8000 Aarhus</p>
+                <p><b>E-mail:</b> domen@aarhus.dk</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/domenaarhus/"><i class="fab fa-facebook-f"></i></a>
+                    <p>/domenaarhus</p>
+                    <a href="https://www.instagram.com/domeniaarhus/?hl=da"><i class="fab fa-instagram"></i></a>
+                    <p>@Domeniaarhus</p>
+                    <p>@Domensblomster</p>
+                </div> 
+        </div>
+        
+        <div id="foot2">
+            <h4>Åbningstider</h4>
+            <div id="åbningstider"></div>
+        </div>
+
+        <div id="foot3">
+            <h4>Find Domen</h4> 
+        </div>
+        <div id="map"></div>
+        
+    </div>
+
+    <video id="video-footer" autoplay muted loop>
+        <source src="images/footer.webm" type="video/webm">
+    </video>
+
+    <div class="detmedsmaat">
+        <div id="foot4">
+           <p>&copy; 2022 Domen</p>
+        </div>
+        
+        <div id="foot5">
+            <a href="error.html"><p>Privatlivspolitik</p></a>
+        </div>
+
+        <div id="foot6">
+            <a href="error.html"><p>Bylivshusene</p></a>
+        </div>
+
+        <div id="foot7">
+            <a href="error.html"><p>Aarhus Kommune</p></a>
+        </div>
+        
+    </div>
+</footer>
+
+<!-- baggrund bund slut-->
+</section>
+    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/naturen.js"></script>
+
+</body>
+</html>
+
+<!---->

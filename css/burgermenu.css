@@ -1,0 +1,128 @@
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Cinzel:wght@700&family=Jost:wght@300&family=Montserrat:wght@300&display=swap');
+:root {
+    /* farver */
+    --varmhvid: #FFFDF8;
+    --orange: #ba6d3a;
+    --blaa: #9ab1cb;
+    --groen: #7e963c;
+    --gul: #e5b93f;
+    --sort: #333333;
+    --hvid: #ffffff;
+  
+    /* fonte */
+    --font: 'source-sans-pro', sans-serif; /* font */
+    /* font-weight: 400; brødtekst */
+    /* font-weight: 600; overskrifter */
+    /* font-weight: 700; bold */
+  }
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+  /* Primær baggrund */
+
+.bg {
+  background-color: var(--varmhvid);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+  /* Baggrund når menuen folder ud */
+
+.bg2 {
+  background-image: url("../images/menu-baggrund2.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: var(--sort);
+  font-family: var(--font);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#luk {
+  margin-left: 88vw;
+  padding-top: 5vw;
+  width: 7vw;
+}
+
+/* Styling af søgbaren */
+
+#søgbar {
+  padding-top: 7vw;
+  text-align: center;
+}
+
+#søg {
+  border-radius: 25px;
+  border: none;
+  padding: 2vw;
+  width: 45vw;
+  padding-left: 4vw;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling af menupunkterne */
+
+details summary {
+  color: var(--white);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--font);
+  text-align: center;
+  padding: 6vw;
+  font-size: 6vw;
+  z-index: 2;
+}
+
+summary {
+  list-style-type: none;
+  z-index: 2;
+}
+
+/* Fjerner liste-ikoner */
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.liste {
+  list-style: none;
+}
+
+/* Afstand til top */
+
+#menupunkter {
+  padding-top: 6vw;
+}
+
+/* Styling af undermenupunkterne */
+
+ul {
+    text-align: center;
+    padding: 0;
+    background-color: var(--white);
+    font-size: 5vw;
+    line-height: 2.3;
+}
+
+/* plante i bunden af siden */
+
+#plantebund {
+    width: 170vw;
+    margin-left: -40vw;
+}

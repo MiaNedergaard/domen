@@ -1,0 +1,1416 @@
+/* -------- reset css -------- */
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* --------     css start   -------- */
+/* -------- FONTE OG FARVER -------- */
+
+:root {
+  /* farver */
+  --varmhvid: #FFFDF8;
+  --orange: #ba6d3a;
+  --blaa: #9ab1cb;
+  --groen: #7e963c;
+  --gul: #e5b93f;
+  --sort: #333333;
+  --hvid: #ffffff;
+
+  /* fonte */
+  --font: 'source-sans-pro', sans-serif; /* font */
+  /* font-weight: 400; brødtekst */
+  /* font-weight: 600; overskrifter */
+  /* font-weight: 700; bold */
+}
+
+  /* tekst-indstillinger */
+  a {
+      text-decoration: none;
+      font-family: var(--font);
+      font-weight: 400;
+      color: var(--sort);
+      font-size: 2vw;
+  }
+
+  h1 {
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--sort);
+  }
+
+  h2 {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--sort);
+    font-size: 7.3vw;
+    line-height: 8vw;
+  }
+
+  h3 {
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--sort);
+    font-size: 2vw;
+    line-height: 4vw;
+  }
+
+  h4 {
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--sort);
+    font-size: 1.2vw;
+    line-height: 2vw;
+  }
+
+  p {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--sort);
+    font-size: 1.113vw;
+    line-height: 2.3vw;
+  }
+
+html {
+   scroll-behavior: smooth;
+   background-color: var(--varmhvid);
+}
+
+.wrap {
+    /*background-color: var(--blaa);*/
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+/* ---------------------------------------------- NAVIGATION ------------------------------------------------- */
+
+/* logo mobil */
+
+#logo-top {
+  display: none;
+}
+
+#burgermenu {
+  display: none;
+}
+
+#plantetop-mobil {
+  display: none;
+}
+
+/* ---- NAVIGATIONSBAR ---- */
+.navbar{
+    font-family: var(--brodtekst);
+    z-index: 99;
+    font-weight: normal;
+    height: 5.5vw;
+    background-color: var(--varmhvid);
+}
+
+.logo a:hover{
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.navbar a:hover{
+    opacity: 0.5;
+    transition: .2s;
+}
+
+/* So-me placering i navbar */
+.nav-socials {
+    padding-left: 8.4vw;
+}
+
+/* afstand mellem links */
+.nav-links a{
+    color: var(--sort);
+    font-size: 1.1vw;
+    padding-right: 7vw;
+}
+
+/* links placering i navbar */
+.nav-links {
+    list-style: none;
+    padding-left: 22vw;
+    padding-top: 0.5vw;
+}
+
+.is-selected {
+    padding: 0px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: var(--varmhvid);
+    transition: all 300ms ease-in-out;
+    z-index: 10000;
+}
+
+.navbar {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 2vh;
+    background-color: var(--varmhvid);
+    transition: all 300ms ease-in-out;
+}
+
+/* logos placering i navbar */
+.logo{
+    margin-right: auto;
+    margin-left: 1vw;
+}
+
+/* logo størrelse */
+.logo img{
+    height: 3vw;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--sort);
+    padding: 1.2vw;
+    transition: color 0.2s ease;
+}
+
+.nav-socials i {
+    font-size: 1.5vw;
+}
+
+.social-link{
+    text-decoration: none;
+    color: var(--sort);
+    width: 3vw;
+    padding-left: 2vw;
+    transition: color 0.2s ease;
+}
+
+.container{
+    width: 100%;
+}
+
+.responsive-nav{
+    display: flex;
+}
+
+/* ---- SCROLL EFFECT NAVBAR ---- */
+
+.scroll-down .navbar{
+    transform: translate3d(0, -100%, 0);
+    background-color: transparent;
+}
+
+.scroll-down nav{
+    background-color: transparent;
+}
+
+.scroll-up nav{
+    box-shadow: 0px 10px 35px 0px rgba(87, 87, 87, 0.4);
+    color: black;
+    background-color: var(--varmhvid);
+}
+
+ /* ---- Søgefelt ---- */
+
+ .box{
+    position: absolute;
+    top: 49%;
+    left: 97%;
+    transform: translate(-90%,-50%);
+}
+.input {
+    padding-left: 0.5vw;
+    width: 2vw;
+    height: 2vw;
+    background: none;
+    border: 0.17vw solid var(--sort);
+    border-radius: 2vw;
+    box-sizing: border-box;
+    font-family: var(--brodtekst);
+    font-size: 0.9vw;
+    color: var(--sort);
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 11vw;
+    background: var(--varmhvid);
+    border-radius: 0.7vw;
+}
+#soeg {
+    position: absolute;
+    top: 49%;
+    right: 0.15vw;
+    transform: translate(-50%,-50%);
+    font-size: 0.85vw;
+    color: var(--sort);
+    transition: .2s;
+}
+
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+
+/* ---- side-navigation ---- */
+
+#sidenavigation {
+    position: fixed;
+    right: 2vw;
+    top: 42vh;
+  }
+  
+  .flex a {
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    margin-bottom: 1vw;
+  }
+
+  a.selected {
+    /* bliver tilføjet i js - sørger for at første nav-prik er fyldt */
+    color: white;
+    background: var(--orange);
+  }
+  
+  .flex a:hover {
+    background-color: var(--orange);
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+  }
+  
+  .description {
+    display: none;
+    text-decoration: none;
+    font-size: 0.83vw;
+    padding-right: 0.4vw;
+    color: var(--orange);
+    font-family: var(--font);
+    text-decoration: none;
+    line-height: 0;
+  }
+  
+  .flex a:hover + .description {
+    display: block;
+  }
+
+/* ---------------------------------------------- INDHOLD ------------------------------------------------- */
+
+#overskrift-mobil-frivillige {
+  display: none;
+}
+
+#baggrund-top {
+    position: relative;
+    background-color: var(--varmhvid);
+    z-index: 1;
+    padding-bottom: 12vw;
+    margin-bottom: 85vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+#baggrund-bund {
+    position: relative;
+    background-color: var(--varmhvid);
+    overflow: hidden;
+}
+
+/* Sektion 1 - landingpage */
+
+#plantetop {
+    width: 85vw;
+    display: block;
+    margin-left: -7.5vw;
+    padding-top: 3vw;
+}
+
+#dome {
+    width: 49%;
+    position: absolute;
+    top: 36vw; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+/* ---- Domen titel øverst ---- */
+
+.titel {
+    position: absolute;
+    top: 20vw;
+    width: 80%;
+}
+
+.bogstaver {
+    margin-left: 4.2vw;
+}
+
+#d {
+    width: 11.1vw;
+}
+
+#o {
+    width: 12.1vw;
+}
+
+#m {
+    position: absolute;
+    z-index: 2;
+    top: 0.2vw;
+    width: 14.2vw;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#e {
+    margin-left: 26vw;
+    width: 8.8vw;
+    z-index: 2;
+}
+
+#n{
+    position: absolute;
+    top: 0.2vw;
+    width: 11.3vw;
+    right: 0;
+}
+
+/* pil der bouncer */
+
+#pilbillede {
+    width: 3vw;
+  }
+  
+  #pil {
+    position: absolute;
+    padding-top: 1vw;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .arrow {
+    text-align: center;
+    margin: 5% 0;
+  }
+  
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+/* Sektion 2 - bylivshus */
+
+#bylivshus {
+    display: flex;
+    margin-top: 9vw;
+    padding-top: 8vw;
+}
+
+#bylivs-billede {
+    width: 48vw;
+}
+
+#hojre-tekst h2 {
+    position: absolute;
+    text-align: right;
+    right: 10vw;
+    width: 50vw;
+    top: 61vw;
+}
+
+#hojre-tekst p {
+    text-align: right;
+    padding-top: 16vw;
+}
+
+#knap1 {
+    left: 45%;
+}
+
+.button {
+    position: relative;
+    margin-top: 2vw;
+    overflow: hidden;
+    height: 2.3vw;
+    padding: 0 2vw;
+    border-radius: 1.3vw;
+    background: linear-gradient(
+      82.3deg,
+      #db7323 10.8%,
+      rgb(231, 159, 65) 94.3%
+    );
+    background-size: 400%;
+    color: #fff;
+    font-size: 1vw;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: var(--blaa);
+    transition: all 0.475s;
+  }
+
+  /*Fjern mobilbillede*/
+
+  .bylivshusmobil {
+    display: none;
+  }
+
+  .trekantbyliv {
+    position: absolute;
+    width: 17vw;
+  }
+
+  .bylivsvb {
+    top: 84.5vw;
+    left: 19.5vw;
+  }
+
+  .bylivsvvb {
+    top: 81.8vw;
+    left: 9vw;
+  }
+
+  .bylivsvt {
+    top: 64.5vw;
+    left: 9vw;
+  }
+
+  .bylivst {
+    top: 62vw;
+    left: 19.5vw;
+  }
+
+  .bylivshb {
+    top: 81.8vw;
+    left: 29.9vw;
+  }
+
+  .bylivshhb {
+    top: 84.5vw;
+    left: 40vw;
+  }
+
+/* Sektion 3 - video */
+
+#video-scroll {
+    position: absolute;
+    margin-top: 8vw;
+}
+
+#video1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    height: 120%;
+}
+
+/* Sektion 4 - slider */
+  
+  main {
+    overflow-x: hidden;
+    display: flex;
+    position: sticky;
+    top:0;
+    background-color: var(--varmhvid);
+    box-shadow: 0px -4px 15px rgba(50, 50, 50, 0.35);
+  }
+  
+  main section {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  #omraadet {
+    background-color: var(--varmhvid);
+  }
+
+  #cafe-overskrift {
+    width: 12vw;
+    margin-left: 7.3vw;
+  }
+
+  #cafe-overskrift {
+    width: 12vw;
+    margin-left: 7.3vw;
+  }
+
+  #omraade-overskrift {
+    width: 11vw;
+    margin-left: 8.3vw;
+  }
+
+  #events-overskrift {
+    width: 9vw;
+    margin-left: 9.3vw;
+  }
+
+  .h-beskrivelse {
+      width: 25vw;
+      margin-left: 6vw;
+      margin-right: 4vw;
+  }
+
+  .h-beskrivelse h4 {
+      margin-top: 3vw;
+  }
+  
+  .slider-billede {
+    width: 45vw;
+  }
+
+  .slidertrekant1 {
+    position: absolute;
+    left: 0;
+    margin-top: -28vw;
+  }
+
+  .slidertrekant2 {
+    position: absolute;
+    left: 100vw;
+    margin-top: -28vw;
+  }
+
+  .slidertrekant3 {
+    position: absolute;
+    left: 200vw;
+    margin-top: -28vw;
+  }
+
+  #button2 {
+    margin-bottom: 3vw;
+    left: 8vw;
+  }
+
+  #button3 {
+    margin-bottom: 3vw;
+    left: 8vw;
+  }
+
+  #button4 {
+    margin-bottom: 3vw;
+    left: 8vw;
+  }
+
+  .trekant-halv {
+    position: absolute;
+    width: 12vw;
+  }
+
+  .trekant {
+    position: absolute;
+    width: 20vw
+  }
+
+  .billedehb {
+    z-index: 2;
+    left: 79vw;
+    top: 31vw;
+  }
+
+  .billedeht {
+    z-index: 2;
+    left: 54.3vw;
+    top: 7vw;
+  }
+
+  .billedemt {
+    z-index: 2;
+    left: 67.2vw;
+    top: 8.3vw;
+  }
+
+  .billedemb {
+    z-index: 2;
+    left: 67.2vw;
+    top: 28.6vw;
+  }
+
+  .billedevb {
+    z-index: 2;
+    left: 55vw;
+    top: 31.7vw;
+  }
+
+  /* Sektion 5 - frivillige */
+
+  #frivillige {
+      display: flex;
+      padding-top: 8vw;
+  }
+
+  #plante-op {
+    width: 35vw;
+    margin-top: -11vw;
+    margin-left: -3vw;
+    margin-right: 10vw;
+  }
+
+  #frivillige-billede {
+    position: absolute;
+    width: 32vw;
+    left: 10vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .frivillig-beskrivelse {
+    width: 23vw;
+    margin-left: 6vw;
+    margin-right: 5vw;
+}
+
+  #frivillige-overskrift {
+    width: 15.5vw;
+    margin-top: 1.3vw;
+  }
+
+  #kommuneikon {
+      width: 7vw;
+      margin-top: 2vw;
+      margin-left: 7.1vw;
+  }
+
+  #button5 {
+    margin-bottom: 3vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  
+  /* Sektion 6 - anmeldelser */
+
+  #anmeldelser-scroll {
+      text-align: center;
+      margin-bottom: 3vw;
+      margin-top: 4vw;
+  }
+
+  .flex-anmeldelser {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+  .anmeldelser-ikon {
+    width: 5.5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  .anmeldelse-billede {
+      width: 25vw;
+  }
+
+  .checked1 {
+    color: #9AB1CB;
+  }
+
+  .checked2 {
+    color: #E5B93F;
+  }
+
+  .checked3 {
+    color: #96AC3F;
+  }
+
+  .stjerner {
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+  }
+
+/* -- Footer -- */
+
+.footer {
+  width: 100vw;
+  height: 51vw;
+  background-color: var(--orange);
+  flex-wrap: wrap;
+  padding-top: 2vw;
+}
+
+#footer-logo img{
+  text-align: center;
+  width: 8vw;
+  margin-left: 45vw;
+  margin-bottom: 1vw;
+  position: relative;
+  z-index: 3;
+}
+
+.foot {
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+#foot1 {
+  margin-left: 8vw;
+}
+
+#foot1 h4 {
+  color:  var(--varmhvid);
+  font-size: 1.9vw;
+}
+
+#foot1 p {
+  color:  var(--varmhvid);
+}
+
+#foot2 {
+  margin-left: 15vw;
+  color:  var(--varmhvid);
+}
+
+#foot2 h4{
+  color:  var(--varmhvid);
+  font-size: 1.9vw;
+}
+
+#foot3 {
+  margin-left: 24vw;
+  color:  var(--varmhvid);
+}
+
+#foot3 h4 {
+  color:  var(--varmhvid);
+  font-size: 1.9vw;
+}
+
+#foot4 p, #foot5 p, #foot6 p, #foot7 p {
+  color:  var(--varmhvid);
+}
+
+.foot .social-links a {
+  display: inline-block;
+  height: 3.5vw;
+  width: 3.5vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 2vw 2vw 0;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--varmhvid);
+  transition: all 0.5s ease;
+  padding-top: 0.5vw;
+}
+
+.foot .social-links a:hover {
+ color: var(--orange);
+ background-color: var(--varmhvid);
+  
+}
+
+#åbningstider {
+  font-family: var(--font);
+  font-weight: 400;
+  color: var(--varmhvid);
+  font-size: 1.113vw;
+  line-height: 2.6vw;
+  list-style: none;
+}
+
+.detmedsmaat {
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  bottom: 0.1vw;
+}
+
+#foot4 {
+  margin-left: 5vw;
+}
+
+#foot5 {
+  margin-left: 5vw;
+}
+
+#foot6 {
+  margin-left: 50vw;
+}
+
+#foot7 {
+  margin-left: 5vw;
+}
+
+#video-footer {
+  position: absolute;
+  width: 100vw;
+  bottom: -0.5vw;
+}
+
+/* mapbox */
+
+#map { 
+  display: flex;
+  position: absolute; 
+  margin-top: 3vw;
+  width: 20vw;
+  height: 20vw; 
+  margin-left: 73vw;
+  padding-bottom: 20vw;
+}
+
+
+
+
+
+
+/* ------------------------------- mobil-version ---------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+
+
+ .navbar {
+   display: none;
+ }
+
+#logo-top {
+  display: block;
+  width: 10vw;
+  margin-left: 3vw;
+}
+
+#burgermenu {
+  display: inline;
+  margin-left: 75vw;
+}
+
+#nav-mobil {
+  display: flex;
+  margin-top: 4vw;
+}
+
+#sidenavigation {
+  display: none;
+}
+
+.titel {
+  margin-top: 50vw;
+}
+
+#dome {
+  margin-top: 50vw;
+}
+
+#plantetop {
+  display: none;
+}
+
+#plantetop-mobil {
+  width: 85vw;
+    display: block;
+    margin-left: -7.5vw;
+    padding-top: 3vw;
+    margin-top: -60vw;
+}
+
+#landingpage {
+  margin-top: 100vw;
+}
+
+#bylivshus {
+  display: flex;
+}
+
+#bylivs-billede {
+  display: none;
+}
+
+#venstre-billede {
+ display: none;
+}
+
+#pilbillede {
+  margin-top: 30vw;
+  width: 8vw;
+}
+
+#hojre-tekst {
+  display: flex;
+}
+
+#hojre-tekst h2{
+  margin-top: 100vw;
+  text-align: center;
+  left: 22vw;
+  width: 55vw;
+  font-size: 12vw;
+  line-height: 13vw;
+}
+
+#hojre-tekst p{
+  margin-top: 78vw;
+  text-align: left;
+  font-size: 4vw;
+  line-height: 7vw;
+  padding: 0;
+}
+
+#knap1 {
+  position: absolute;
+  top: 275vw;
+  z-index: 20;
+  left: 31vw;
+}
+
+.button {
+  position: relative;
+  margin-top: 2vw;
+  overflow: hidden;
+  height: 12.3vw;
+  width: 40vw;
+  padding: 0 2vw;
+  border-radius: 10.3vw;
+  background: linear-gradient(
+    82.3deg,
+    #db7323 10.8%,
+    rgb(231, 159, 65) 94.3%
+  );
+  background-size: 400%;
+  color: #fff;
+  font-size: 4vw;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: var(--blaa);
+  transition: all 0.475s;
+}
+
+.bylivshusmobil {
+  display: block;
+}
+.bylivshusmobil img {
+  width: 90vw;
+  margin-top: 30vw;
+  margin-left: 5vw;
+}
+/* Video-sektion */
+
+#video1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  height: 100%;
+  left: -100vw;
+}
+
+/* Sektion 4 - slider */
+
+#cafe-overskrift {
+  width: 12vw;
+  margin-left: 7.3vw;
+}
+
+#omraade-overskrift {
+  width: 11vw;
+  margin-left: 8.3vw;
+}
+
+#events-overskrift {
+  width: 9vw;
+  margin-left: 9.3vw;
+}
+
+.h-beskrivelse {
+    width: 100vw;
+    margin-left: 6vw;
+}
+
+.h-beskrivelse h3 {
+  font-size: 6vw;
+  line-height: 8vw;
+  width: 70vw;
+  margin-bottom: 2vw;
+}
+
+.h-beskrivelse p {
+  font-size: 4vw;
+  width: 70vw;
+  line-height: 7vw;
+}
+
+.h-beskrivelse h4 {
+    margin-top: 6vw;
+    margin-bottom: 4vw;
+    font-size: 4vw;
+}
+
+.slider-billede {
+  width: 45vw;
+}
+
+.slidertrekant1 {
+  display: none;
+}
+
+.slidertrekant2 {
+  display: none;
+}
+
+.slidertrekant3 {
+  display: none;
+}
+
+#button2 {
+  left: 8vw;
+  padding: 0;
+  margin: 0;
+}
+
+.slut {
+  margin-bottom: 10vw;
+}
+
+/* Sektion 5 - frivillige */
+
+#frivillige {
+  padding-top: 8vw;
+}
+
+#plante-op {
+width: 55vw;
+margin-top: -11vw;
+margin-left: -3vw;
+margin-right: 10vw;
+}
+
+#frivillige-billede {
+position: absolute;
+width: 62vw;
+left: 20vw;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.frivillig-beskrivelse {
+  position: absolute;
+  width: 70vw;
+  margin-top: 100vw;
+  left: 10vw;
+  font-size: 4vw;
+}
+
+.frivillig-beskrivelse h3 {
+  font-size: 7vw;
+}
+
+.frivillig-beskrivelse p {
+  font-size: 4vw;
+  line-height: 7vw;
+  padding-top: 5vw;
+}
+
+#frivillige-overskrift {
+  display: none;
+}
+
+#kommuneikon {
+  width: 27vw;
+  margin-top: 15vw;
+  margin-left: 23vw;
+  margin-bottom: 8vw;
+}
+
+#overskrift-mobil-frivillige {
+  display: block;
+  text-align: center;
+  margin-top: 10vw; 
+  font-size: 12vw;
+  line-height: 11vw;
+  top: 10vw;
+  left: 0;
+} 
+
+#button5 {
+  margin-left: 15vw;
+}
+
+/* Sektion 6 - anmeldelser */
+
+#anmeldelser {
+  margin-top: 200vw;
+}
+
+#anmeldelser-scroll {
+  text-align: center;
+  margin-bottom: 15vw;
+  margin-top: 4vw;
+  font-size: 12vw;
+}
+
+.flex-anmeldelser {
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+margin-right: 10vw;
+margin-left: 10vw;
+}
+
+.anmeldelser-ikon {
+width: 5.5vw;
+margin-left: -2vw;
+}
+
+.anmeldelse-billede {
+  width: 60vw;
+}
+
+.anmeldelser-billeder {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 4vw;
+  margin-bottom: 10vw;
+}
+
+/* -- Footer -- */
+
+.footer {
+  width: 100vw;
+  height: 360vw;
+  background-color: var(--orange);
+  padding-top: 2vw;
+}
+
+#footer-logo img{
+  text-align: center;
+  width: 18vw;
+  margin-left: 41vw;
+  margin-bottom: 10vw;
+  margin-top: 5vw;
+  position: relative;
+  z-index: 3;
+}
+
+.foot {
+  display: flex;
+  z-index: 10;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#foot1 {
+  margin-left: 0;
+  margin-bottom: 15vw;
+  text-align: center;
+}
+
+#foot1 h4 {
+  color:  var(--varmhvid);
+  font-size: 7vw;
+  line-height: 12vw;
+  margin-bottom: 5vw;
+}
+
+#foot1 p {
+  color:  var(--varmhvid);
+  font-size: 4vw;
+  line-height: 7vw;
+}
+
+#foot2 {
+  margin-left: 0;
+  color:  var(--varmhvid);
+  margin-bottom: 8vw;
+  text-align: center;
+}
+
+#foot2 h4{
+  color:  var(--varmhvid);
+  font-size: 7vw;
+  line-height: 12vw;
+  margin-bottom: 5vw;
+}
+
+#foot3 {
+  margin-left: 0;
+  color:  var(--varmhvid);
+  margin-bottom: 8vw;
+  text-align: center;
+}
+
+#foot3 h4 {
+  color:  var(--varmhvid);
+  font-size: 7vw;
+  line-height: 12vw;
+  margin-bottom: 5vw;
+  margin-top: 10vw;
+}
+
+#foot4 p, #foot5 p, #foot6 p, #foot7 p {
+  color:  var(--varmhvid);
+}
+
+.foot .social-links a {
+  display: inline-block;
+  height: 8.5vw;
+  width: 8.5vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 2vw 2vw 0;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--varmhvid);
+  transition: all 0.5s ease;
+  padding-top: 1vw;
+  font-size: 5vw;
+}
+
+.foot .social-links a:hover {
+ color: var(--orange);
+ background-color: var(--varmhvid);
+  
+}
+
+#åbningstider {
+  font-family: var(--font);
+  font-weight: 400;
+  color: var(--varmhvid);
+  font-size: 4vw;
+  line-height: 7vw;
+  list-style: none;
+}
+
+.detmedsmaat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  bottom: 35vw;
+  text-align: center;
+  margin-left: 35vw;
+}
+
+#foot4 {
+  margin-left: 0vw;
+  margin-bottom: 5vw;
+}
+
+#foot5 {
+  margin-left: 0vw;
+  margin-bottom: 5vw;
+}
+
+#foot6 {
+  margin-left: 0vw;
+  margin-bottom: 5vw;
+}
+
+#foot7 {
+  margin-left: 0vw;
+  margin-bottom: 5vw;
+}
+
+#foot4 p{
+  font-size: 4vw;
+}
+
+#foot5 p{
+  font-size: 4vw;
+}
+
+#foot6 p{
+  font-size: 4vw;
+}
+
+#foot7 p{
+  font-size: 4vw;
+}
+
+#video-footer {
+  position: absolute;
+  width: 100vw;
+  bottom: -0.5vw;
+}
+
+/* mapbox */
+
+#map { 
+  position: absolute; 
+  margin-top: 240vw;
+  width: 80vw;
+  height: 80vw; 
+  margin-left: 10vw;
+  padding-bottom: 20vw;
+}
+
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--SEO-->
+  <meta name="description" content="Dette er burgermenuen, som ses når websiden ses på en mobil-enhed mindre end
+  480px bred">
+  <meta name="keywords" content="burgermenu">
+  <meta name="author" content="Laura Rosendahl, Mia Nedergaard og Line Heesch Jessen">
+
+  <!-- link rel="stylesheet" href="css/reset.css" -->
+	<link rel="stylesheet" href="css/burgermenu.css">
+  <title>Domen burgermenumenu</title>
+  <!-- favicon = ikon i faneblad / browser -->
+  <link rel="icon" href="images/logo.png" />
+</head>
+
+<body>
+
+<!-- baggrund -->
+  <div class="bg">
+
+<a href="index.html"><img id="luk" src="images/x-ikon.png" alt="kryds til at lukke menu"></a>
+
+<!-- Søgbar -->
+  <div id="søgbar">
+<input id="søg" type="text" list="suggestions" name="søg" placeholder="Søg"><br><br>
+<datalist id="suggestions">
+  <option>Cafeen</option>
+  <option>Menukort</option>
+  <option>Planterne</option>
+  <option>Bliv frivillig</option>
+
+</datalist>
+</div>
+
+<!-- Menupunkter i menu -->
+  <div id="menupunkter">
+    <details>
+      <summary id="naturen"><a href="naturen.html">Naturen</a></summary>
+    </details>
+
+    <details>
+      <summary id="cafeen"><a href="cafe.html">Caféen</a></summary>
+    </details>
+
+    <details>
+     <summary id="events"> <a href="events.html">Events</a></summary>
+    </details>
+
+    <details>
+      <summary id="omdomen"><a href="omdomen.html">Om Domen</a></summary>
+    </details>
+  </div>
+
+  <img id="plantebund" src="images/plante3.png" alt="plante i bund af menu">
+</div>
+
+</body>
+
+</html>

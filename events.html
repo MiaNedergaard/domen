@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="Der afholdes løbende arrangemneter i Domen. Alle er velkomne og de er som udgangspunkt 
+    alle gratis. Alle events har, i et eller andet omfang, et element der er med til at fremme fællesskabet, medborgerskabet 
+    og/eller den grønne omstilling.">
+    <meta name="keywords" content="arrangementer, events, eventkalender, booking, for alle, gratis">
+    <meta name="author" content="Laura Rosendahl, Mia Nedergaard og Line Heesch Jessen">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/0bdbe266da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fbc3fxm.css">
+    <link rel="icon" href="images/logo.png">
+    <!--MAPBOX-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
+    <title>Events</title>
+</head>
+<body>
+
+    <div id="nav-mobil">
+        <div><a href="index.html"><img id="logo-top" src="images/logo.png" alt="Domen logo"></a></div>
+        <div><a href="burgermenu.html"><h2 id="burgermenu">☰</h2></a></div>
+    </div>
+        <!--NAVBAR-->
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Domen Logo"></a>
+                </div>
+            <div class="container">
+                <div class="content">
+                    <div class="responsive-nav" id="responsive-nav">
+                        <div class="nav-links">
+                            <a class="nav-link" href="naturen.html">Naturen</a>
+                            <a class="nav-link" href="cafe.html">Caféen</a>
+                            <a class="nav-link" href="events.html">Events</a>
+                            <a class="nav-link" href="omdomen.html">Om Domen</a>
+                        </div>
+        
+                        <div class="nav-socials">
+                            <a class="nav-icon social-link" href="https://www.instagram.com/domeniaarhus/" target="_blank"><i id="insta" class="fa fa-instagram"></i></a>
+                            <a class="nav-icon social-link" href="https://www.facebook.com/domenaarhus" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </div>
+                                    
+                        <!--  Søgefelt  -->
+                        <div class="box">
+                            <form name="search">
+                                <input type="text" class="input" name="txt" onmouseout="document.search.txt.value = ''">
+                            </form>
+                            <i id="soeg" class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+<!-- section 1 - galleri -->
+<section id="galleri">
+    
+<!--  Splide js  -->
+<div id="splide" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="images/b2.png" alt="Karussel billede events"></li>
+        <li class="splide__slide"><img src="images/b1.png" alt="Karussel billede events"></li>
+        <li class="splide__slide"><img src="images/b3.png" alt="Karussel billede events"></li>
+        <li class="splide__slide"><img src="images/b4.png" alt="Karussel billede events"></li>
+        <li class="splide__slide"><img src="images/b5.png" alt="Karussel billede events"></li>
+        <li class="splide__slide"><img src="images/b6.png" alt="Karussel billede events"></li>
+        <li class="splide__slide"><img src="images/b7.png" alt="Karussel billede events"></li>
+      </ul>
+    </div>
+  </div>
+
+
+<!-- Wrap start -->
+<div class="wrap">
+
+<!-- start kode her -->
+<h2 data-aos="fade-up" data-aos-delay="300" id="overskrift">EVENTS</h2>
+
+<!--karussel mobil-udgave -->
+<div class="slidecontainer">
+    <div class="slides">
+        <div class="slide">
+            <img src="images/b2.png" alt="Karussel billede events">
+        </div>
+        <div class="slide">
+            <img src="images/b1.png" alt="Karussel billede events">
+        </div>
+        <div class="slide">
+           <img src="images/b3.png" alt="Karussel billede events">
+        </div>
+            <img src="images/b4.png" alt="Karussel billede events">
+        </div>
+        <div class="slide">
+            <img src="images/b5.png" alt="Karussel billede events">
+        </div>
+        <div class="slide">
+            <img src="images/b6.png" alt="Karussel billede events">
+        </div>
+        <div class="slide">
+            <img src="images/b7.png" alt="Karussel billede events">
+        </div>
+    </div>
+    <div class="slide-controls">
+        <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+<p data-aos="fade-up" id="metatekst">I domen afholder vi ofte arrangementer og events. Domen er for alle, og alle kan booke Domen, hvilket afspejler sig i vores <a class="priser" href="images/priser.pdf" download>priser</a>. Det er dog vigtigt at arrangement kan samle folk om en vigtig sag, der fremmer enten fællesskabet, medborgerskabet eller en bæredygtig udvikling. Domen er et hus for alle, hvor alle skal have lige mulighed for at deltage. Det er derfor ikke muligt at tage entré, men man kan altid ”lade hatten gå rundt” til åbne arrangementer. </p>
+<img data-aos="fade-up" id="kommendemobil" src="images/kommendeeventsmobil.png" alt="trekantsbillede kommende events">
+</div>
+</section>
+
+
+    <!-- section 4 - kommende events -->
+        <section id="event">
+            <div class="h-billede">
+            <div id="event-billede"></div>
+        <div class="eventstrekant-margin">
+        <img data-aos="fade" data-aos-delay="300" data-aos-duration="500" class="trekantbyliv bylivsvb" src="images/kevents4.png" alt="trekantsbillede af events i Domen">
+        <img data-aos="fade" data-aos-delay="500" data-aos-duration="500" class="trekantbyliv bylivsvt" src="images/kevents6.png" alt="trekantsbillede af events i Domen">
+        <img data-aos="fade" data-aos-delay="700" data-aos-duration="500" class="trekantbyliv bylivst" src="images/kevents5.png" alt="trekantsbillede af events i Domen">
+        <img data-aos="fade" data-aos-delay="900" data-aos-duration="500" class="trekantbyliv bylivsvvb" src="images/kevents1.png" alt="trekantsbillede af events i Domen">
+        <img data-aos="fade" data-aos-delay="700" data-aos-duration="500" class="trekantbyliv bylivshb" src="images/kevents2.png" alt="trekantsbillede af events i Domen">
+        <img data-aos="fade" data-aos-delay="900" data-aos-duration="500" class="trekantbyliv bylivshhb" src="images/kevents3.png" alt="trekantsbillede af events i Domen">
+        </div>
+
+        <div class="event-beskrivelse">
+            <h2 data-aos="fade-left" data-aos-delay="300" id="event-overskrift">KOMMENDE EVENTS</h2>
+            <p data-aos="fade-left" data-aos-delay="600">Der afholdes løbende mange spændende begivenheder her i Domen, hvor alle er velkommende. For at gøre det overskueligt for dig, har vi lavet en eventkalender, hvor du kan følge med i de kommende tre måneders events. Kalenderen bliver løbende opdateret med eventuelle ændringer eller tilføjelser. Du kan også følge med på Facebook og Instagram, hvor vi også laver opslag og begivenheder, når der  <br> afholdes arrangementer i Domen. Her kan du samtidig se <br> opslag fra tidligere afholdte begivenheder.</p></div> 
+        </div>
+        </section>
+
+<section id="eventmobil">
+    <div class="event-beskrivelsemobil">
+        <h2 data-aos="fade-left" data-aos-delay="300" id="event-overskriftmobil">KOMMENDE EVENTS</h2>
+        <p data-aos="fade-left" data-aos-delay="600">Der afholdes løbende mange spændende begivenheder her i Domen, hvor alle er velkommende. For at gøre det overskueligt for dig, har vi lavet en eventkalender, hvor du kan følge med i de kommende tre måneders events. Kalenderen bliver løbende opdateret med eventuelle ændringer eller tilføjelser. Du kan også følge med på Facebook og Instagram, hvor vi også laver opslag og begivenheder, når der afholdes arrangementer i Domen. Her kan du samtidig se opslag fra tidligere afholdte begivenheder.</p>
+    </div>
+</section>
+        <button onclick="window.location.href='eventkalender.html'" id="knap1" class="button">
+            <span class="button-content">Eventkalender</span>
+        </button>
+
+
+ <!-- section 3 - booking -->
+ <div id="booking">
+    <div class="v-overskrift">
+        <img id="booking-overskrift" src="images/booking.png" alt="Booking overskrift">
+    </div>
+
+ 
+
+    <div class="booking-beskrivelse">
+        <p>Alle kan booke Domen til åbne arrangementer. Det eneste krav er, at dit event, i et eller andet omfang, skal omfavne vores værdier: medborgerskab, fællesskab og grøn omstilling. Vi har lokaler af forskellig størrelse alt efter behov: 
+           <p class="punkt" id="punkt"> ● Mødelokale i stueetagen </p>
+           <p class="punkt"> ● Hele stueetagen </p>
+           <p class="punkt"> ● 1. sal uden mødelokale </p>
+           <p class="punkt" id="punkt1"> ● 1. sal mødelokale </p>
+            
+           <p> Drøm stort og vær med til at skabe en ”vi går forrest” trend indenfor medborgerskab og fællesskab, og book Domen til dit næste arrangement. <br> <br> Booking af Domen sker på mail: domen@aarhus.dk eller på telefon: +45 41 87 46 95</p>
+        <br> 
+        <p>Ved interesse kan du se en prisoversigt <a class="priser" href="/images/priser.pdf" download>her</a>.</p>
+    </div>
+
+        <div id="booking-billede"></div>
+        <div class="bookingtrekant-margin">
+        <img data-aos="fade" data-aos-delay="500" data-aos-duration="500" class="trekant-halv billedehb" src="images/booking1.png" alt="trekantsbillede af Domen">
+        <img data-aos="fade" data-aos-delay="300" data-aos-duration="500" class="trekant billedeht" src="images/booking2.png" alt="trekantsbillede af Domen">
+        <img data-aos="fade" data-aos-delay="500" data-aos-duration="500" class="trekant billedemt" src="images/booking3.png" alt="trekantsbillede af Domen">
+        <img data-aos="fade" data-aos-delay="300" data-aos-duration="500" class="trekant billedemb" src="images/booking4.png" alt="trekantsbillede af Domen">
+        <img data-aos="fade" data-aos-delay="300" data-aos-duration="500" class="trekant billedevb" src="images/booking5.png" alt="trekantsbillede af Domen">
+        </div>
+   
+    
+    </div>
+
+    <section id="bookingmobil">
+        <div id="overskriftmobil">
+            <h2 data-aos="fade-right" data-aos-delay="300">BOOKING</h2>
+        </div>
+        <div class="booking-beskrivelsemobil">
+            <p data-aos="fade-right" data-aos-delay="600">Alle kan booke Domen til åbne arrangementer. Det eneste krav er, at dit event, i et eller andet omfang, skal omfavne vores værdier: medborgerskab, fællesskab og grøn omstilling. Vi har lokaler af forskellig størrelse alt efter behov: 
+               <p class="punkt" id="punkt-mode"> ● Mødelokale i stueetagen </p>
+               <p class="punkt"> ● Hele stueetagen </p>
+               <p class="punkt"> ● 1. sal uden mødelokale </p>
+               <p class="punkt" id="punkt2"> ● 1. sal mødelokale </p>
+                
+               <p> Drøm stort og vær med til at skabe en ”vi går forrest” trend indenfor medborgerskab og fællesskab, og book Domen til dit næste arrangement. <br> <br> Booking af Domen sker på mail: domen@aarhus.dk eller på telefon: +45 41 87 46 95</p>
+            <p>Ved interesse kan du se en prisoversigt <a class="priser" href="/images/priser.pdf" download>her</a>.</p>
+        </div>
+        <img data-aos="fade-up" id="bookingbilledemobil" src="images/bookingmobil.png" alt="trekantsbillede 1. sal">
+    </section>
+
+ <!-- footer -->
+ <footer data-aos="slide-up" data-aos-duration="800" class="footer">
+    <a href="index.html"><div id="footer-logo"><img src="images/logo-hvid.png" alt="Footer Logo"></div></a>
+
+    <div class="foot">
+        <div id="foot1">
+            <h4>Kontakt</h4>
+                <p> <b>Tlf:</b> +45  41 87 46 95</p>
+                <p><b>Adresse:</b> Inge Lehmanns Gade 22, 8000 Aarhus</p>
+                <p><b>E-mail:</b> domen@aarhus.dk</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/domenaarhus/"><i class="fab fa-facebook-f"></i></a>
+                    <p>/domenaarhus</p>
+                    <a href="https://www.instagram.com/domeniaarhus/?hl=da"><i class="fab fa-instagram"></i></a>
+                    <p>@Domeniaarhus</p>
+                    <p>@Domensblomster</p>
+                </div> 
+        </div>
+        
+        <div id="foot2">
+            <h4>Åbningstider</h4>
+            <div id="åbningstider"></div>
+        </div>
+
+        <div id="foot3">
+            <h4>Find Domen</h4> 
+        </div>
+        <div id="map"></div>
+        
+    </div>
+
+    <video id="video-footer" autoplay muted loop>
+        <source src="images/footer.webm" type="video/webm">
+    </video>
+
+    <div class="detmedsmaat">
+        <div id="foot4">
+           <p>&copy; 2022 Domen</p>
+        </div>
+        
+        <div id="foot5">
+            <a href="error.html"><p>Privatlivspolitik</p></a>
+        </div>
+
+        <div id="foot6">
+            <a href="error.html"><p>Bylivshusene</p></a>
+        </div>
+
+        <div id="foot7">
+            <a href="error.html"><p>Aarhus Kommune</p></a>
+        </div>
+        
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/events.js"></script>
+</body>
+</html>

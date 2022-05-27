@@ -1,0 +1,1080 @@
+/* -------- reset css -------- */
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* --------     css start   -------- */
+/* -------- FONTE OG FARVER -------- */
+
+:root {
+  /* farver */
+  --varmhvid: #FFFDF8;
+  --orange: #ba6d3a;
+  --blaa: #9ab1cb;
+  --groen: #7e963c;
+  --gul: #e5b93f;
+  --sort: #333333;
+  --hvid: #ffffff;
+
+  /* fonte */
+  --font: 'source-sans-pro', sans-serif; /* font */
+  /* font-weight: 400; brødtekst */
+  /* font-weight: 600; overskrifter */
+  /* font-weight: 700; bold */
+}
+
+  /* tekst-indstillinger */
+  a {
+      text-decoration: none;
+      font-family: var(--font);
+      font-weight: 400;
+      color: var(--sort);
+      font-size: 2vw;
+  }
+
+  h1 {
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--sort);
+  }
+
+  h2 {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--sort);
+    font-size: 7.3vw;
+    line-height: 8vw;
+  }
+
+  h3 {
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--sort);
+    font-size: 2vw;
+    line-height: 4vw;
+  }
+
+  h4 {
+    font-family: var(--font);
+    font-weight: 600;
+    color: var(--sort);
+    font-size: 1.2vw;
+    line-height: 2vw;
+  }
+
+  p {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--sort);
+    font-size: 1.113vw;
+    line-height: 2.3vw;
+  }
+
+html {
+   scroll-behavior: smooth;
+   background-color: var(--varmhvid);
+}
+
+.wrap {
+    /*background-color: var(--blaa);*/
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+/* ---------------------------------------------- NAVIGATION ------------------------------------------------- */
+
+#nav-mobil {
+  display: none;
+}
+/* ---- NAVIGATIONSBAR ---- */
+.navbar{
+    font-family: var(--brodtekst);
+    z-index: 99;
+    font-weight: normal;
+    height: 5.5vw;
+    background-color: var(--varmhvid);
+}
+
+.logo a:hover{
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.navbar a:hover{
+    opacity: 0.5;
+    transition: .2s;
+}
+
+/* So-me placering i navbar */
+.nav-socials {
+    padding-left: 8.4vw;
+}
+
+/* afstand mellem links */
+.nav-links a{
+    color: var(--sort);
+    font-size: 1.1vw;
+    padding-right: 7vw;
+}
+
+/* links placering i navbar */
+.nav-links {
+    list-style: none;
+    padding-left: 22vw;
+    padding-top: 0.5vw;
+}
+
+.is-selected {
+    padding: 0px;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: var(--varmhvid);
+    transition: all 300ms ease-in-out;
+    z-index: 10000;
+}
+
+.navbar {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 2vh;
+    background-color: var(--varmhvid);
+    transition: all 300ms ease-in-out;
+}
+
+/* logos placering i navbar */
+.logo{
+    margin-right: auto;
+    margin-left: 1vw;
+}
+
+/* logo størrelse */
+.logo img{
+    height: 3vw;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--sort);
+    padding: 1.2vw;
+    transition: color 0.2s ease;
+}
+
+.nav-socials i {
+    font-size: 1.5vw;
+}
+
+.social-link{
+    text-decoration: none;
+    color: var(--sort);
+    width: 3vw;
+    padding-left: 2vw;
+    transition: color 0.2s ease;
+}
+
+.container{
+    width: 100%;
+}
+
+.responsive-nav{
+    display: flex;
+}
+
+/* ---- SCROLL EFFECT NAVBAR ---- */
+
+.scroll-down .navbar{
+    transform: translate3d(0, -100%, 0);
+    background-color: transparent;
+}
+
+.scroll-down nav{
+    background-color: transparent;
+}
+
+.scroll-up nav{
+    box-shadow: 0px 10px 35px 0px rgba(87, 87, 87, 0.4);
+    color: black;
+    background-color: var(--varmhvid);
+}
+
+ /* ---- Søgefelt ---- */
+
+ .box{
+    position: absolute;
+    top: 49%;
+    left: 97%;
+    transform: translate(-90%,-50%);
+}
+.input {
+    padding-left: 0.5vw;
+    width: 2vw;
+    height: 2vw;
+    background: none;
+    border: 0.17vw solid var(--sort);
+    border-radius: 2vw;
+    box-sizing: border-box;
+    font-family: var(--brodtekst);
+    font-size: 0.9vw;
+    color: var(--sort);
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 11vw;
+    background: var(--varmhvid);
+    border-radius: 0.7vw;
+}
+#soeg {
+    position: absolute;
+    top: 49%;
+    right: 0.15vw;
+    transform: translate(-50%,-50%);
+    font-size: 0.85vw;
+    color: var(--sort);
+    transition: .2s;
+}
+
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+/* ---------------------------------------------- INDHOLD ------------------------------------------------- */
+
+#baggrund-top {
+    position: relative;
+    background-color: var(--varmhvid);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+/* ------- sektion 1 - galleri ------- */
+
+#omdomenmobil {
+  display: none;
+}
+
+#omdomen {
+    display: flex;
+    margin-top: 9vw;
+    margin-bottom: 10vw;
+}
+
+#overskriftmobil {
+  display: none;
+}
+
+#overskriftvenstre img {
+    width: 9.8vw;
+}
+
+#billederight img {
+    width: 43vw;
+    padding-left: 8vw;
+}
+
+#beskrivelse p{
+    padding-left: 3vw;
+    padding-right: 2vw;
+    width: 32vw;
+}
+
+/* sektion 2 - om Domen */
+.slidertrekant1 {
+    position: absolute;
+    left: 0;
+    margin-top: -7vw;
+  }
+
+.trekant-halv {
+    position: absolute;
+    width: 11vw;
+  }
+
+  .trekant {
+    position: absolute;
+    width: 19vw
+  }
+
+  .billedehb {
+    z-index: 2;
+    left: 79vw;
+    top: 31vw;
+  }
+
+  .billedeht {
+    z-index: 2;
+    left: 54.3vw;
+    top: 7vw;
+  }
+
+  .billedemt {
+    z-index: 2;
+    left: 67.2vw;
+    top: 8.3vw;
+  }
+
+  .billedemb {
+    z-index: 2;
+    left: 67.2vw;
+    top: 28.6vw;
+  }
+
+  .billedevb {
+    z-index: 2;
+    left: 55vw;
+    top: 31.7vw;
+  }
+
+/* Section 3 - værdier */
+
+.vaerdier {
+    margin-bottom: 6vw;
+}
+.vaerdier h2 {
+    text-align: center;
+    margin: 5vw;
+}
+
+#metatekstmobil {
+  display: none;
+}
+
+#metatekst {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: -3vw;
+    margin-bottom: 3vw;
+    text-align: center;
+}
+
+.billede img {
+    width: 9vw;
+  }
+
+#vaerdier-flex {
+    margin-top: 6vw;
+    display: flex;
+    text-align: center;
+}
+
+.vaerdi1 {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#medborgerskab {
+    margin-bottom: 0.5vw;
+}
+
+#groen {
+    margin-bottom: 0.5vw;
+}
+
+/*------FAQ-------*/
+
+#mobiloverskrift {
+display: none;
+}
+
+#plantebagmobil {
+  display: none;
+}
+
+.faq {
+    position: relative;
+    background-color: var(--varmhvid);
+    overflow: hidden;
+}
+
+.faqside {
+    display: flex;
+    margin-top: 6.5vw;
+    margin-bottom: 10vw;
+}
+
+#faqoverskrift {
+    width: 10vw;
+    margin-top: 10vw;
+    margin-right: 2vw;
+    margin-left: 10vw;
+}
+
+.faq-overskrift {
+  margin-top: 2vw;
+}
+
+#plantebag {
+    position: absolute;
+    width: 35vw;
+    margin-top: -8vw;
+    margin-left: -20vw;
+}
+
+.foldud {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--sort);
+    font-size: 1.113vw;
+    line-height: 2.3vw;
+}
+
+.faqkasse {
+    text-align: center;
+    margin-bottom: 5vw;
+    z-index: 1;
+    margin-left: 20vw;
+    
+}
+
+#pil1 {
+  color: var(--sort);
+  font-size: 2vw;
+  line-height: 1.4;
+  box-sizing: border-box;
+  padding-left: 35.9vw;
+}
+
+#pil2 {
+  color: var(--sort);
+  font-size: 2vw;
+  line-height: 1.4;
+  box-sizing: border-box;
+  padding-left: 36.6vw;
+}
+
+#pil3 {
+  color: var(--sort);
+  font-size: 2vw;
+  line-height: 1.4;
+  box-sizing: border-box;
+  padding-left: 33.7vw;
+}
+
+#pil4 {
+  color: var(--sort);
+  font-size: 2vw;
+  line-height: 1.4;
+  box-sizing: border-box;
+  padding-left: 33.2vw;
+}
+
+.foldud {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    padding: 1.8vw;
+    padding-left: 4vw;
+    width: 60vw;
+    height: 10vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    box-shadow: 0px 10px 35px 0px rgba(87, 87, 87, 0.4);
+    margin-bottom: 2px;
+    margin-left: -20vw;
+  }
+
+  #kasse1 {
+    border-radius: 3px 3px 0px 0px;
+  }
+
+  #kasse4 {
+    border-radius:0px 0px 3px 3px;
+  }
+  
+  .active, .foldud:hover {
+    background-color: rgb(234, 232, 232); 
+  }
+  
+  .panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 60vw;
+    padding: 2vw;
+    border-radius: 3px;
+    margin-left: -20vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+
+  #eventlink {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--sort);
+    font-size: 1.113vw;
+    text-decoration: underline
+  }
+
+/* -- Footer -- */
+
+.footer {
+    width: 100vw;
+    height: 51vw;
+    background-color: var(--orange);
+    flex-wrap: wrap;
+    padding-top: 2vw;
+  }
+  
+  #footer-logo img{
+    text-align: center;
+    width: 8vw;
+    margin-left: 45vw;
+    margin-bottom: 1vw;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .foot {
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+  
+  #foot1 {
+    margin-left: 8vw;
+  }
+  
+  #foot1 h4 {
+    color:  var(--varmhvid);
+    font-size: 1.9vw;
+  }
+  
+  #foot1 p {
+    color:  var(--varmhvid);
+  }
+  
+  #foot2 {
+    margin-left: 15vw;
+    color:  var(--varmhvid);
+  }
+  
+  #foot2 h4{
+    color:  var(--varmhvid);
+    font-size: 1.9vw;
+  }
+  
+  #foot3 {
+    margin-left: 24vw;
+    color:  var(--varmhvid);
+  }
+  
+  #foot3 h4 {
+    color:  var(--varmhvid);
+    font-size: 1.9vw;
+  }
+  
+  #foot4 p, #foot5 p, #foot6 p, #foot7 p {
+    color:  var(--varmhvid);
+  }
+  
+  .foot .social-links a {
+    display: inline-block;
+    height: 3.5vw;
+    width: 3.5vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 2vw 2vw 0;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--varmhvid);
+    transition: all 0.5s ease;
+    padding-top: 0.5vw;
+  }
+  
+  .foot .social-links a:hover {
+   color: var(--orange);
+   background-color: var(--varmhvid);
+    
+  }
+  
+  #åbningstider {
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--varmhvid);
+    font-size: 1.113vw;
+    line-height: 2.6vw;
+    list-style: none;
+  }
+  
+  .detmedsmaat {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    bottom: 0.1vw;
+  }
+  
+  #foot4 {
+    margin-left: 5vw;
+  }
+  
+  #foot5 {
+    margin-left: 5vw;
+  }
+  
+  #foot6 {
+    margin-left: 50vw;
+  }
+  
+  #foot7 {
+    margin-left: 5vw;
+  }
+  
+  #video-footer {
+    position: absolute;
+    width: 100vw;
+    bottom: -0.5vw;
+  }
+  
+  /* mapbox */
+  
+  #map { 
+    display: flex;
+    position: absolute; 
+    margin-top: 3vw;
+    width: 20vw;
+    height: 20vw; 
+    margin-left: 73vw;
+    padding-bottom: 20vw;
+  }
+
+  /*Mobilversion*/
+
+  @media only screen and (max-width: 480px) {
+
+    #splide {
+      display: none;
+    }
+    .navbar {
+      display: none;
+    }
+
+    /*Navbar mobil */
+   
+   #logo-top {
+     display: block;
+     width: 10vw;
+     margin-left: 3vw;
+   }
+   
+   #burgermenu {
+     display: inline;
+     margin-left: 75vw;
+   }
+   
+   #nav-mobil {
+     margin-top: 4vw;
+     display: flex;
+   }
+
+   /*Om Domen afsnit */
+
+   #omdomen {
+    display: none;
+    }
+
+   #omdomenmobil {
+    display: contents;
+    margin-left: 10vw;
+  }
+
+   #overskriftmobil {
+     display: block;
+     font-size: 10vw;
+     text-align: center;
+     margin-top: 8vw;
+   }
+
+   #tekstmobil {
+     text-align: left;
+     font-size: 4vw;
+     line-height: 7vw;
+     margin-top: 7.5vw;
+     margin-left: 5vw;
+     margin-right: 3vw;
+   }
+
+   /*Trekantsgalleri */
+
+   #trekantsbilledemobil {
+     width: 80vw;
+     margin-top: 10vw;
+   }
+
+
+   /*Værdier*/
+
+   .vaerdier h2 {
+     margin-top: 15vw;
+   }
+
+   #metatekst p {
+    display: none;
+   }
+
+   #metatekstmobil {
+    display: block;
+   }
+
+   #metatekstmobil p {
+     font-size: 4vw;
+     line-height: 7vw;
+     margin-top: 8vw;
+     margin-bottom: 10vw;
+     margin-left: 5vw;
+   }
+
+   #vaerdier-flex {
+     display: contents;
+     margin-left: 10vw;
+     margin-right: 10vw;
+   }
+
+   .billede img{
+     width: 30vw;
+   }
+
+   #vaerdier-flex h3 {
+     font-size: 6vw;
+     margin-top: 5vw;
+     margin-bottom: 5vw;
+   }
+
+   #vaerdier-flex p {
+     font-size: 4vw;
+     line-height: 7vw;
+     margin-bottom: 8vw;
+     text-align: left;
+     margin-left: 5vw;
+   }
+
+   /*FAQ*/
+
+#faqoverskrift{
+  display: none;
+}
+
+#mobiloverskrift {
+  display: block;
+}
+
+#mobiloverskrift h2 {
+  text-align: center;
+  font-size: 12vw;
+  padding-bottom: 2vw ;
+  margin-top: 20vw;
+}
+
+.faq {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+#plantebag {
+display: none;
+}
+
+#plantebagmobil {
+  display: block;
+}
+
+.plantemobil img {
+  display: flex;
+  width: 90vw;
+  position: absolute;
+  margin-top: -10vw;
+}
+.faqside {
+  display: flex;
+
+}
+
+.faq button {
+  font-family: var(--font);
+  color: var(--sort);
+  font-size: 1.113vw;
+  line-height: 2.3vw;
+}
+
+.faqkasse {
+  text-align: center;
+  margin-bottom: 5vw;
+  z-index: 1;
+  margin-left: 20vw;
+  margin-top: 20vw;
+}
+
+.foldud {
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+  padding: 1.8vw;
+  padding-left: 4vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  box-shadow: 0px 10px 35px 0px rgba(87, 87, 87, 0.4);
+  margin-bottom: 2px;
+  margin-left: -14vw;
+  width: 90vw;
+  height: 9vh;
+}
+
+#pil1 {
+  color: var(--sort);
+  font-size: 3vw;
+  margin-left: 4vw;
+}
+
+#pil2 {
+  color: var(--sort);
+  font-size: 3vw;
+  margin-left: 5.7vw;
+}
+
+#pil3 {
+  color: var(--sort);
+  font-size: 3vw;
+  margin-left: 1vw;
+}
+
+#pil4 {
+  color: var(--sort);
+  font-size: 3vw;
+}
+
+#kasse1 {
+  border-radius: 3px 3px 0px 0px;
+}
+
+#kasse4 {
+  border-radius:0px 0px 3px 3px;
+}
+
+.active, .foldud:hover {
+  background-color: rgb(234, 232, 232); 
+}
+
+.faq-overskrift {
+  font-size: 3vw;
+  font-weight: 100;
+  margin-top: 8vw;
+}
+
+.faq-overskrift h4 {
+  margin-top: 5vw;
+}
+
+.panel {
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 90vw;
+  padding: 6vw;
+  border-radius: 3px;
+  margin-left: -15vw;
+}
+
+.panel p {
+  font-size: 4vw;
+  line-height: 7vw;
+}
+
+#eventlink {
+  font-size: 4vw;
+  line-height: 7vw;
+}
+
+
+
+/*Footer*/
+.footer {
+  width: 100vw;
+  height: 360vw;
+  background-color: var(--orange);
+  padding-top: 2vw;
+}
+
+#footer-logo img{
+  text-align: center;
+  width: 18vw;
+  margin-left: 41vw;
+  margin-bottom: 10vw;
+  margin-top: 5vw;
+  position: relative;
+  z-index: 3;
+}
+
+.foot {
+  display: flex;
+  z-index: 10;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#foot1 {
+  margin-left: 0;
+  margin-bottom: 15vw;
+  text-align: center;
+}
+
+#foot1 h4 {
+  color:  var(--varmhvid);
+  font-size: 7vw;
+  line-height: 12vw;
+  margin-bottom: 5vw;
+}
+
+#foot1 p {
+  color:  var(--varmhvid);
+  font-size: 4vw;
+  line-height: 7vw;
+}
+
+#foot2 {
+  margin-left: 0;
+  color:  var(--varmhvid);
+  margin-bottom: 8vw;
+  text-align: center;
+}
+
+#foot2 h4{
+  color:  var(--varmhvid);
+  font-size: 7vw;
+  line-height: 12vw;
+  margin-bottom: 5vw;
+}
+
+#foot3 {
+  margin-left: 0;
+  color:  var(--varmhvid);
+  margin-bottom: 8vw;
+  text-align: center;
+}
+
+#foot3 h4 {
+  color:  var(--varmhvid);
+  font-size: 7vw;
+  line-height: 12vw;
+  margin-bottom: 5vw;
+  margin-top: 10vw;
+}
+
+#foot4 p, #foot5 p, #foot6 p, #foot7 p {
+  color:  var(--varmhvid);
+}
+
+.foot .social-links a {
+  display: inline-block;
+  height: 8.5vw;
+  width: 8.5vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 2vw 2vw 0;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--varmhvid);
+  transition: all 0.5s ease;
+  padding-top: 1vw;
+  font-size: 5vw;
+}
+
+.foot .social-links a:hover {
+ color: var(--orange);
+ background-color: var(--varmhvid);
+  
+}
+
+#åbningstider {
+  font-family: var(--font);
+  font-weight: 400;
+  color: var(--varmhvid);
+  font-size: 4vw;
+  line-height: 7vw;
+  list-style: none;
+}
+
+.detmedsmaat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  z-index: 2;
+  position: absolute;
+  bottom: 35vw;
+  text-align: center;
+  margin-left: 35vw;
+}
+
+#foot4 {
+  margin-left: 0vw;
+  margin-bottom: 5vw;
+}
+
+#foot5 {
+  margin-left: 0vw;
+  margin-bottom: 5vw;
+}
+
+#foot6 {
+  margin-left: 0vw;
+  margin-bottom: 5vw;
+}
+
+#foot7 {
+  margin-left: 0vw;
+  margin-bottom: 5vw;
+}
+
+#foot4 p{
+  font-size: 4vw;
+}
+
+#foot5 p{
+  font-size: 4vw;
+}
+
+#foot6 p{
+  font-size: 4vw;
+}
+
+#foot7 p{
+  font-size: 4vw;
+}
+
+#video-footer {
+  position: absolute;
+  width: 100vw;
+  bottom: -0.5vw;
+}
+
+/* mapbox */
+
+#map { 
+  position: absolute; 
+  margin-top: 240vw;
+  width: 80vw;
+  height: 80vw; 
+  margin-left: 10vw;
+  padding-bottom: 20vw;
+}
+  
+
+
+   
+  }

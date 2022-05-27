@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="I cafeen i Domen, kan du nyde kolde og varme drikke, samt søde og salte snacks.
+     Alle vores varer er økologiske.">
+    <meta name="keywords" content="cafe, økologi, økologisk, menukort, non-profit">
+    <meta name="author" content="Laura Rosendahl, Mia Nedergaard og Line Heesch Jessen">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
+    <script src="https://kit.fontawesome.com/0bdbe266da.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/cafe.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fbc3fxm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--MAPBOX-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
+    <title>Caféen</title>
+</head>
+<body>
+
+    <section id="baggrund-top">
+    <!-- logo mobil -->
+<div id="nav-mobil">
+    <div><a href="index.html"><img id="logo-top" src="images/logo.png" alt="Domen logo"></a></div>
+    <div><a href="burgermenu.html"><h2 id="burgermenu">☰</h2></a></div>
+</div>
+        <!--NAVBAR-->
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Domen Logo"></a>
+                </div>
+            <div class="container">
+                <div class="content">
+                    <div class="responsive-nav" id="responsive-nav">
+                        <div class="nav-links">
+                            <a class="nav-link" href="naturen.html">Naturen</a>
+                            <a class="nav-link" href="cafe.html">Caféen</a>
+                            <a class="nav-link" href="events.html">Events</a>
+                            <a class="nav-link" href="omdomen.html">Om Domen</a>
+                        </div>
+        
+                        <div class="nav-socials">
+                            <a class="nav-icon social-link" href="https://www.instagram.com/domeniaarhus/" target="_blank"><i id="insta" class="fa fa-instagram"></i></a>
+                            <a class="nav-icon social-link" href="https://www.facebook.com/domenaarhus" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </div>
+                                    
+                        <!--  Søgefelt  -->
+                        <div class="box">
+                            <form name="search">
+                                <input type="text" class="input" name="txt" onmouseout="document.search.txt.value = ''">
+                            </form>
+                            <i id="soeg" class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+
+
+<!-- section 1 - galleri -->
+<section id="galleri">
+<!--  Splide js  -->
+<div id="splide" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide"><img src="images/cafeslider1.png" alt="Karussel billede café"></li>
+        <li class="splide__slide"><img src="images/cafeslider2.png" alt="Karussel billede café"></li>
+        <li class="splide__slide"><img src="images/cafeslider3.png" alt="Karussel billede café"></li>
+        <li class="splide__slide"><img src="images/cafeslider4.png" alt="Karussel billede café"></li>
+        <li class="splide__slide"><img src="images/cafeslider5.png" alt="Karussel billede café"></li>
+        <li class="splide__slide"><img src="images/cafeslider6.png" alt="Karussel billede café"></li>
+        <li class="splide__slide"><img src="images/cafeslider7.jpg" alt="Karussel billede café"></li>
+      </ul>
+    </div>
+  </div>
+
+
+<!-- Wrap start -->
+<div class="wrap">
+
+<h2 data-aos="fade-up" data-aos-delay="300" id="overskrift">CAFÉEN</h2>
+
+<!--karussel mobil-udgave -->
+<div class="slidecontainer">
+    <div class="slides">
+        <div class="slide">
+            <img src="images/cafeslider1.png" alt="Karussel billede café">
+        </div>
+        <div class="slide">
+            <img src="images/cafeslider2.png" alt="Karussel billede café">
+        </div>
+        <div class="slide">
+           <img src="images/cafeslider3.png" alt="Karussel billede café">
+        </div>
+            <img src="images/cafeslider4.png" alt="Karussel billede café">
+        </div>
+        <div class="slide">
+            <img src="images/cafeslider5.png" alt="Karussel billede café">
+        </div>
+        <div class="slide">
+            <img src="images/cafeslider6.png" alt="Karussel billede café">
+        </div>
+        <div class="slide">
+            <img src="images/cafeslider7.jpg" alt="Karussel billede café">
+        </div>
+    </div>
+    <div class="slide-controls">
+        <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+<p data-aos="fade-up" id="metatekst">I caféen kan du nyde en kop kaffe, et par kolde øl eller et glas rødvin, hvidvin eller rosé i smukke tropiske omgivelser. Vi har masser af siddepladser, både ovenpå og nedenunder - i solen eller i skyggen. Caféen er non-profit og drives i fællesskab af kommune, borgere og foreninger. Derfor er du med til at støtte op om medborgerskabet i Aarhus, når du køber mad og drikke i Domen. Tag din ven, mor, studiemakker eller dig selv under armen, og kom ned og besøg caféen i Domen. <br> Nedenfor kan du udforske vores menukort. Med omtanke for bæredygtigheden er alle vores produkter er økologiske.</p>
+
+<!-- Wrap slut-->
+</div>
+
+</section>
+
+<!-- Baggrund top slut-->
+</section>
+
+
+
+
+<!-- section 2 - video -->
+<div id="video">
+    <video id="video1" autoplay muted loop>
+        <source src="images/cafeen4k.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+
+<!-- Baggrund til sektion efter video -->
+<section id="baggrund-bund">
+<!-- Wrap start -->
+<div class="wrap">
+
+<!-- section 3 - menukort -->
+<div id="menukort-sektion">
+    <img data-aos="zoom-in-up" data-aos-duration="3000" id="plante-bag-menu" src="images/plante-menu.png" alt="plante bag menukort">
+    <div class="menukort-sektion">
+    <div>
+    <img data-aos="fade-right" id="menukort-overskrift" src="images/menukort-overskrift.png" alt="overskrift til menukort">
+    </div>
+    <div>
+        <img id="menukortmobil" src="images/menukortmobil.png" alt="Domens menukort">
+    </div>
+    <div>
+    <img id="menukort" src="images/menukort2.png" alt="Domens menukort">
+    </div>
+</div>
+</div>
+
+<!-- Wrap slut-->
+</div>
+
+
+<!-- footer -->
+<footer data-aos="slide-up" data-aos-duration="800" class="footer">
+    <a href="index.html"><div id="footer-logo"><img src="images/logo-hvid.png" alt="Footer logo"></div></a>
+
+    <div class="foot">
+        <div id="foot1">
+            <h4>Kontakt</h4>
+                <p> <b>Tlf:</b> +45  41 87 46 95</p>
+                <p><b>Adresse:</b> Inge Lehmanns Gade 22, 8000 Aarhus</p>
+                <p><b>E-mail:</b> domen@aarhus.dk</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/domenaarhus/"><i class="fab fa-facebook-f"></i></a>
+                    <p>/domenaarhus</p>
+                    <a href="https://www.instagram.com/domeniaarhus/?hl=da"><i class="fab fa-instagram"></i></a>
+                    <p>@Domeniaarhus</p>
+                    <p>@Domensblomster</p>
+                </div> 
+        </div>
+        
+        <div id="foot2">
+            <h4>Åbningstider</h4>
+            <div id="åbningstider"></div>
+        </div>
+
+        <div id="foot3">
+            <h4>Find Domen</h4> 
+        </div>
+        <div id="map"></div>
+        
+    </div>
+
+    <video id="video-footer" autoplay muted loop>
+        <source src="images/footer.webm" type="video/webm">
+    </video>
+
+    <div class="detmedsmaat">
+        <div id="foot4">
+           <p>&copy; 2022 Domen</p>
+        </div>
+        
+        <div id="foot5">
+            <a href="error.html"><p>Privatlivspolitik</p></a>
+        </div>
+
+        <div id="foot6">
+            <a href="error.html"><p>Bylivshusene</p></a>
+        </div>
+
+        <div id="foot7">
+            <a href="error.html"><p>Aarhus Kommune</p></a>
+        </div>
+        
+    </div>
+</footer>
+
+<!-- Baggrund bund slut-->
+</section>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/cafe.js"></script>
+</body>
+</html>

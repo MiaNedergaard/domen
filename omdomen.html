@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO-->
+    <meta name="description" content="Domen er et bylivshus i centrum af Aarhus. Det er et samlingssted for alle der vil fællesskabet, 
+    medborgerskabet og den grønne omstilling, som er vores kerneværdier her i Domen. Domen er et forsøg på at tænke i nye baner 
+    når det kommer til grøn nybyudvikling.">
+    <meta name="keywords" content="Aarhus kommune, Dome og vision, Europæisk kulturhovedstad, Bylivshus, medborgerskab, fællesskab, 
+    grøn omstilling, bæredygtighed, værdier, FAQ">
+    <meta name="author" content="Laura Rosendahl, Mia Nedergaard og Line Heesch Jessen">
+
+    <script src="https://kit.fontawesome.com/0bdbe266da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/omdomen.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fbc3fxm.css">
+    <link rel="icon" href="images/logo.png">
+    <!--MAPBOX-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet'/>
+    <title>Om Domen</title>
+</head>
+<body>
+    <section id="baggrund-top">
+        <!--NAVBAR-->
+
+        <div id="nav-mobil">
+            <div><a href="index.html"><img id="logo-top" src="images/logo.png" alt="Domen logo"></a></div>
+            <div><a href="burgermenu.html"><h2 id="burgermenu">☰</h2></a></div>
+        </div>
+        
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Domen Logo"></a>
+                </div>
+            <div class="container">
+                <div class="content">
+                    <div class="responsive-nav" id="responsive-nav">
+                        <div class="nav-links">
+                            <a class="nav-link" href="naturen.html">Naturen</a>
+                            <a class="nav-link" href="cafe.html">Caféen</a>
+                            <a class="nav-link" href="events.html">Events</a>
+                            <a class="nav-link" href="omdomen.html">Om Domen</a>
+                        </div>
+        
+                        <div class="nav-socials">
+                            <a class="nav-icon social-link" href="https://www.instagram.com/domeniaarhus/" target="_blank"><i id="insta" class="fa fa-instagram"></i></a>
+                    <a class="nav-icon social-link" href="https://www.facebook.com/domenaarhus" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </div>
+                                    
+                        <!--  Søgefelt  -->
+                        <div class="box">
+                            <form name="search">
+                                <input type="text" class="input" name="txt" onmouseout="document.search.txt.value = ''">
+                            </form>
+                            <i id="soeg" class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    
+<!-- Wrap start -->
+<div class="wrap">
+
+<div id="omdomen">
+    <div id="overskriftvenstre">
+    <img data-aos="fade-right" data-aos-delay="300" src="images/omdomen-overskrift.png" alt="Om Domen overskrift">
+    </div>
+    <div data-aos="fade-right" data-aos-delay="600" id="beskrivelse">
+        <p>Domen er tegnet af arkitekt Kristoffer Tejlgaard og opført af entreprenørvirksomheden NCC i samarbejde med Aarhus Kommune. Domen blev opført i 2016 af Dome Of Vision og fungerede som kulturhus i forbindelse med Aarhus’ 
+            pris som Europæisk kulturhovedstad i 2017. I 2018 overtog Aarhus Kommune al drift af bygningen. Domen er efterfølgende blevet et af fem bylivshuse i Aarhus, og fungerer som et samlingssted for alle byens borgere, hvor 
+            fællesskabet, medborgerskabet og den grønne omstilling vægtes højt. Domen er et forsøg på at tænke byggeri på nye og mere bæredygtige måder, hvorfor størstedelen af interiøret i Domen består af genanvendte materialer og 
+            træ. Opføringen af Domen er udforskning af, hvordan man kan nytænke bygninger, hvor nye materialer, teknologier og løsninger kommer i spil. Et formål med Domen er at samle borgere, erhvervsdrivende, 
+            kulturfigurer samt kommunen i Domen og dermed sørge for, at Domen og Aarhus udvikler sig så optimalt som muligt for alle aktører. 
+        </p>
+    </div>
+
+        <div class="slidertrekant1">
+            <img data-aos="fade" data-aos-delay="300" data-aos-duration="500" class="trekant-halv billedehb" src="images/cafeen1.png" alt="trekant-billede Domen">
+            <img data-aos="fade" data-aos-delay="500" data-aos-duration="500" class="trekant billedeht" src="images/cafeen2.png" alt="trekant-billede Domen">
+            <img data-aos="fade" data-aos-delay="700" data-aos-duration="500" class="trekant billedemt" src="images/cafeen3.png" alt="trekant-billede Domen">
+            <img data-aos="fade" data-aos-delay="500" data-aos-duration="500" class="trekant billedemb" src="images/cafeen4.png" alt="trekant-billede Domen">
+            <img data-aos="fade" data-aos-delay="700" data-aos-duration="500" class="trekant billedevb" src="images/cafeen5.png" alt="trekant-billede Domen">
+        </div>
+    </div>
+
+<section id="omdomenmobil">
+    <h2 id="overskriftmobil">OM DOMEN</h2>
+    <img data-aos="fade-up" data-aos-delay="300" id="trekantsbilledemobil" src="images/omdomentrekant.png" alt="Trekantsgalleri af cafeen">
+    <p data-aos="fade-up" data-aos-delay="300" id="tekstmobil">Domen er tegnet af arkitekt Kristoffer Tejlgaard og opført af entreprenør- <br> virksomheden NCC i samarbejde med Århus Kommune. Domen blev opført i 2016 af Dome Of Vision og fungerede som kulturhus i forbindelse med Århus’ 
+        pris som Europæisk kulturhovedstad i 2017. I 2018 overtog Århus Kommune al drift af bygningen. Domen er efterfølgende blevet et af fem bylivshuse i Århus, og fungerer som et samlingssted for alle byens borgere, hvor 
+        fællesskabet, medborgerskabet og den grønne omstilling vægtes højt. Domen er et forsøg på at tænke byggeri på nye og mere bæredygtige måder, hvorfor størstedelen af interiøret i Domen består af genanvendte materialer og 
+        træ. Opføringen af Domen er udforskning af, hvordan man kan nytænke bygninger, hvor nye materialer, teknologier og løsninger kommer i spil. Et formål med Domen er at samle borgere, erhvervsdrivende, 
+        kulturfigurer samt kommunen i Domen og dermed sørge for, at Domen og Århus udvikler sig så optimalt som muligt for alle aktører. 
+    </p>
+   
+</section>
+
+
+    <div class="vaerdier">
+  <h2 data-aos="fade-up" data-aos-delay="300">VORES VÆRDIER</h2>
+
+    <div data-aos="fade-up" data-aos-delay="600" id="metatekst">
+    <p>Domen er for alle og drives i fællesskab og samarbejde mellem brugere af Domen og Kommunen. Domens virke hviler på vores tre kerneværdier: medborgerskab, fællesskab og grøn omstilling. Alle arrangementer og events der afholdes, både af virksomheder, civile borger og os selv, skal bygge på minimum én af de tre værdier. Vi ønsker at sætte fokus på dette, og gøre Domen til et varetegn for medborgerskab, fællesskab og bæredygtighed - både i Aarhus, resten af Danmark samt internationalt.  </p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="600" id="metatekstmobil">
+    <p>Domens virke hviler på vores tre kerneværdier: medborgerskab, fællesskab og grøn omstilling.</p>
+    </div>
+
+<div id="vaerdier-flex">
+<div data-aos="fade-up" data-aos-delay="600" class="vaerdi1">
+    <div class="billede" id="billede1">
+    <img id="medborgerskab" src="images/værdier-medborgerskab.png" alt="illustration medborgerskab">
+    </div>
+    <h3>Medborgerskab</h3>
+    <p>Aarhus Kommunes medborgerskabspolitik, baner vejen for Domens drift og arrangementer. Domen henvender sig til alle borgere/ medborgere i Aarhus, og ambitionen er, at alle tager medborgerskabsrollen på sig, og har lyst til at deltage i udviklingen af de fællesskaber og den by, vi alle er en del af. </p>
+</div>
+
+<div data-aos="fade-up" data-aos-delay="900" class="vaerdi1">
+    <div class="billede">
+    <img src="images/Værdier-fællesskab.png" alt="illustration fællesskab">
+    </div>
+    <h3 id="faellesskab">Fællesskab</h3>
+    <p>De Forenede Bylivshuse i Aarhus understøtter de lokale fællesskaber. Det er et sted at mødes med- og komme hinanden ved. Fællesskaberne i Domen skabes af de deltagende og engagerede, og er noget vi værner højt om. Domen er blandt andet drevet af frivillige, som kommer her af interesse, og for at være en del af et fællesskab.  </p>
+</div>
+
+<div data-aos="fade-up" data-aos-delay="1200" class="vaerdi1">
+    <div class="billede">
+    <img id="groen" src="images/værdier-grøn-omstilling.png" alt="illustration grøn omstilling">
+    </div> 
+    <h3 id="omstilling">Grøn Omstilling</h3>
+    <p>Domen er opført med en grønne byudvikling i mente, hvor stort set alle materialer er genanvendt. Denne vision fører vi videre i Domen, hvor vi sørger for, at være så CO2 neutrale som muligt. Vi bruger blandt andet ikke to-go kopper og sørger for, at alt i caféen er økologisk.   </p>
+</div>
+</div>
+</div>
+
+<!-- Wrap slut-->
+</div>
+<div id="mobiloverskrift">
+    <h2 data-aos="fade-up" data-aos-delay="300">FAQ</h2>
+    </div>
+<section class="faq">
+    <div class="faqside">
+        
+        <div class="plantemobil">
+            <img id="plantebagmobil" src="images/plante3.png" alt="bregne bag FAQ">
+        </div>
+<div>
+    <img id="faqoverskrift" src="images/FAQ-overskrift.png" alt="FAQ overskrift">
+</div>
+
+<div class="faqkasse">
+    <div class="foldud" id="kasse1"><h4 class="faq-overskrift">Hvordan booker jeg Domen?<i id="pil1" class="fa fa-angle-down"></i></h4></div>
+<div class="panel">
+  <p>Hvis du vil booke Domen til dit arrangement, skal dit event, som udgangspunkt være åbent for alle, dog med få undtagelser. Derudover skal dit arrangement fremme minimum én af vores tre kerneværdier; Medborgskab, Fællesskab eller Den Grønne Omstilling. Ønsker du yderligere information om vores retningslinjer, kan du besøge vores side om <a id="eventlink" href="#">events</a>. Ønsker du at booke Domen bedes du kontakte os her: oelab@aarhus.dk eller domen@aarhus.dk</p>
+</div>
+
+<div class="foldud"><h4 class="faq-overskrift">Hvordan bliver jeg frivillig?<i id="pil2" class="fa fa-angle-down"></i></h4></div>
+<div class="panel">
+  <p>Vi har altid brug for frivillige der kan hjælpe med at forbedre og/eller nytænke hvad Domen er og kan. Vores planteteam består udelukkende af frivillige ildsjæle, med grønne fingre og stor interesse for naturen. Caféen drives af en blanding af frivillige med et barista-gen og folk i jobaktivering. Ønsker du at blive en del af Domens frivillige-hold så tøv ikke med at sende en mail til: domen@aarhus.dk eller kom ned og tag en snak med os.</p>
+</div>
+
+<div class="foldud"><h4 class="faq-overskrift">Må jeg medbringe mad i Domen?<i id="pil3" class="fa fa-angle-down"></i></h4></div>
+<div class="panel">
+  <p>Der må ikke medbringes egen mad i Domen. Her henviser vi til udeområderne. Vores café byder på varme og kolde drikke samt snacks til den lille sult. Vi arbejder i øjeblikket på, at kunne servere mad, men på nuværende tidspunkt er det desværre ikke muligt at købe måltider i caféen.</p>
+</div>
+
+<div class="foldud" id="kasse4"><h4 class="faq-overskrift">Må man have hund med i Domen?<i id="pil4" class="fa fa-angle-down"></i></h4></div>
+<div class="panel">
+  <p>Hunde er meget velkomne i Domen, så længe både ejer og hund udviser respekt overfor de øvrige besøgende i Domen. Der er opsat vandskåle udenfor.</p>
+</div>
+</div>
+<div class="plante">
+    <img data-aos="zoom-in-right" data-aos-duration="3000" data-aos-delay="300" id="plantebag" src="images/plante-op4.png" alt="bregne bag FAQ">
+</div>
+</div>
+</section>
+
+
+
+ <!-- footer -->
+ <footer data-aos="slide-up" data-aos-duration="800" class="footer">
+    <a href="index.html"><div id="footer-logo"><img src="images/logo-hvid.png" alt="footer-logo"></div></a>
+
+    <div class="foot">
+        <div id="foot1">
+            <h4>Kontakt</h4>
+                <p> <b>Tlf:</b> +45  41 87 46 95</p>
+                <p><b>Adresse:</b> Inge Lehmanns Gade 22, 8000 Aarhus</p>
+                <p><b>E-mail:</b> domen@aarhus.dk</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/domenaarhus/"><i class="fab fa-facebook-f"></i></a>
+                    <p>/domenaarhus</p>
+                    <a href="https://www.instagram.com/domeniaarhus/?hl=da"><i class="fab fa-instagram"></i></a>
+                    <p>@Domeniaarhus</p>
+                    <p>@Domensblomster</p>
+                </div> 
+        </div>
+        
+        <div id="foot2">
+            <h4>Åbningstider</h4>
+            <div id="åbningstider"></div>
+        </div>
+
+        <div id="foot3">
+            <h4>Find Domen</h4> 
+        </div>
+        <div id="map"></div>
+        
+    </div>
+
+    <video id="video-footer" autoplay muted loop>
+        <source src="images/footer.webm" type="video/webm">
+    </video>
+
+    <div class="detmedsmaat">
+        <div id="foot4">
+           <p>&copy; 2022 Domen</p>
+        </div>
+        
+        <div id="foot5">
+            <a href="error.html"><p>Privatlivspolitik</p></a>
+        </div>
+
+        <div id="foot6">
+            <a href="error.html"><p>Bylivshusene</p></a>
+        </div>
+
+        <div id="foot7">
+            <a href="error.html"><p>Aarhus Kommune</p></a>
+        </div>
+        
+    </div>
+</footer>
+</section>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="js/omdomen.js"></script>
+</body>
+</html>
